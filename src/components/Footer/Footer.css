@@ -1,0 +1,71 @@
+*{
+    font-family: "Playfair Display", serif;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footer__contact {
+    background-color: #334779;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer__info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .footer__column {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer__address {
+    color: #334779;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer__form-group {
+    margin-bottom: 20px;
+  }
+  
+  .footer__form-group input,
+  .footer__form-group textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  
+  .footer__form-group textarea {
+    height: 100px;
+  }
+  
+  .footer__form-group button {
+    border-radius: 18px;
+    background-color: #334779;
+    color: #fff;
+    text-align: center;
+    padding: 8px 19px;
+    font-weight: 600;
+  }
+  
+  .footer__copyright {
+    background-color: #334779;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+  }
+  
