@@ -53,9 +53,9 @@
 }
 
 .bottom-image-center {
-  width: 343px; /* Establece el ancho deseado */
-  height: 87px; /* Establece la altura deseada */
-  margin: 0 auto; /* Centra horizontalmente */
+  width: 343px;
+  height: 87px;
+  margin: 0 auto;
   display: block;
 }
 
