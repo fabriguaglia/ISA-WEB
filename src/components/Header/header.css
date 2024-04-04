@@ -8,6 +8,27 @@
   padding: 10px;
 }
 
+.navbarprincipal {
+  background-color: #334779 !important;
+  color: white !important;
+}
+
+.isalogoheader {
+  display: flex;
+  width: 300px;
+  height: auto;
+  justify-content: center;
+}
+
+.textcolor {
+  color: white;
+  text-decoration: none;
+}
+
+.maillink {
+  margin-left: 5px;
+}
+
 .left-section {
   display: flex;
   align-items: center;

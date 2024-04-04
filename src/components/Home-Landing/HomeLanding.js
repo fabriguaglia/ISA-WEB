@@ -1,4 +1,6 @@
 import React from 'react'
+import EntradaFoto from "./isaentrada.jpg"
+import SalonFoto from "./isasalon.jpg"
 
 function HomeLanding() {
   return (
@@ -11,14 +13,14 @@ function HomeLanding() {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="..."/>
+      <img src={EntradaFoto} class="d-block w-100" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
+        <h5>Admisiones 2025</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="..."/>
+      <img src={SalonFoto} class="d-block w-100" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
