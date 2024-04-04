@@ -107,7 +107,7 @@ footer {
   cursor: pointer;
 }
 
-/* Estilos para dispositivos móviles */
+/* Estilos para móviles */
 
 @media only screen and (max-width: 768px) {
   .footer-content {
