@@ -16,14 +16,15 @@ function HomeLanding() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src={EntradaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption">
                 <h5>Admisiones 2025</h5>
                 <p>Un colegio que busca promover el esfuerzo, la constancia y la autosuperación para lograr el desarrollo de personas íntegras</p>
+                <button type="button" className="btn custom-btn">Admisiones</button>
               </div>
             </div>
             <div className="carousel-item">
               <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
@@ -56,14 +57,14 @@ function HomeLanding() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src={EntradaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption">
                 <h5>Nivel Inicial</h5>
                 <p>Un colegio que busca promover el esfuerzo, la constancia y la autosuperación para lograr el desarrollo de personas íntegras</p>
               </div>
             </div>
             <div className="carousel-item">
               <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>

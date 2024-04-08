@@ -1,0 +1,10 @@
+.custom-btn {
+    background-color: #334779; /* Cambia el color del fondo del botón */
+    color: white; /* Cambia el color del texto del botón */
+    border-color: #334779; /* Cambia el color del borde del botón */
+  }
+  
+  .custom-btn:hover {
+    background-color: #334779; /* Cambia el color del fondo del botón al pasar el mouse por encima */
+    border-color: #334779; /* Cambia el color del borde del botón al pasar el mouse por encima */
+  }
