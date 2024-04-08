@@ -1,3 +1,34 @@
-.max-height-500 {
-    min-height: 500px;
-  }  
+.carrusel {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+
+.azul {
+  background-color: #334779;
+}
+
+.rojo {
+  background-color: #EE343E;
+}
+
+.barracolores .col {
+  background-color: #334779; /* Color azul */
+  height: 30px; /* Altura de la columna */
+}
+
+.barracolores .col:nth-child(even) {
+  background-color: #EE343E; /* Color rojo */
+}
