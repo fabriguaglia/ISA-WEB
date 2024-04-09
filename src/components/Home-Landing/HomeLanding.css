@@ -13,7 +13,7 @@
 .carousel-img {
   width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 400px !important;
 }
 
 .azul {
@@ -25,10 +25,10 @@
 }
 
 .barracolores .col {
-  background-color: #334779; /* Color azul */
-  height: 30px; /* Altura de la columna */
+  background-color: #334779;
+  height: 20px;
 }
 
 .barracolores .col:nth-child(even) {
-  background-color: #EE343E; /* Color rojo */
+  background-color: #EE343E;
 }
