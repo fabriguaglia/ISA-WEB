@@ -1,6 +1,19 @@
-.square {
-    width: 50%; /* Ancho del cuadrado */
-    height: 200px; /* Alto del cuadrado */
-    background-color: blue; /* Color de fondo */
-  }
-  
+.linea-azul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px !important; /* Ancho de la línea */
+  height: 100vh; /* Altura igual a la altura de la ventana del navegador */
+  background-color: blue;
+}
+
+.linea-vertical {
+  width: 2px !important; /* Ancho de la línea vertical */
+  background-color: #334779; /* Color de fondo */
+  height: 450px; /* Altura fija de la línea vertical */
+  padding: 0;
+}
+.form-group {
+  margin-bottom: 40px; /* Dos líneas de espacio entre cada grupo de formulario */
+}
+
