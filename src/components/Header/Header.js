@@ -1,8 +1,16 @@
 import React from 'react';
-import SantaAnaLogo from "./SantaAnaLogo.png";
+import SantaAnaLogo from "./SantaAnaLogo.png"
 import './header.css';
+import Swal from 'sweetalert2'
 
 const Header = () => {
+    const handleAdmisionesClick = () => {
+      Swal.fire({
+        icon: 'info',
+        title: 'Disculpe las molestias',
+        text: 'Página en construcción'
+      });
+    };
   return (
     <>
       <div className="container-fluid navbarprincipal d-flex justify-content-between align-items-center">
@@ -13,7 +21,7 @@ const Header = () => {
                 <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
                 <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
               </svg>
-              <a className='textcolor maillink'>admin@santa-ana.edu.ar</a>
+              <a className='textcolor maillink' href='mailto:admin@santa-ana.edu.ar'>admin@santa-ana.edu.ar</a>
             </a>
           </div>
         </div>
@@ -27,7 +35,7 @@ const Header = () => {
       <div className="container-fluid headerlogo d-flex justify-content-between align-items-center">
         <div className="left-section">
           <a href="/">
-            <img src="/static/media/SantaAnaLogo.22a668158f0eac4e65ba.png" className="isalogoheader img-fluid" alt="isalogo" />
+            <img src={SantaAnaLogo} className="isalogoheader img-fluid" alt="isalogo" />
           </a>
         </div>
         <div className="container-fluid header-container d-flex justify-content-between align-items-center">
@@ -37,13 +45,13 @@ const Header = () => {
           <div className="text-end ms-auto">
             <div className="row">
               <div className="col long-text">
-                <a href='niveles' className='linkhide'>Niveles</a>
+                <a href='/niveles' className='linkhide'>Niveles</a>
               </div>
               <div className="col long-text">
-                <a href='colegio' className='linkhide'>Sobre nosotros</a>
+                <a href='/colegio' className='linkhide'>Sobre nosotros</a>
               </div>
               <div className="col long-text">
-                <a href='contact' className='linkhide'>Contacto</a>
+                <a href='/contact' className='linkhide'>Contacto</a>
               </div>
             </div>
           </div>
@@ -63,18 +71,18 @@ const Header = () => {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <p className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Niveles
-              </a>
+              </p>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="/inicial">Inicial</a></li>
-                <li><a className="dropdown-item" href="/primaria">Primaria</a></li>
-                <li><a className="dropdown-item" href="/secundaria">Secundaria</a></li>
-                <li><a className="dropdown-item" href="/terciaria">Terciaria</a></li>
+                <li><button className="dropdown-item" onClick={handleAdmisionesClick}>Inicial</button></li>
+                <li><button className="dropdown-item" onClick={handleAdmisionesClick}>Primaria</button></li>
+                <li><button className="dropdown-item" onClick={handleAdmisionesClick}>Secundaria</button></li>
+                <li><button className="dropdown-item" onClick={handleAdmisionesClick}>Terciaria</button></li>
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">Sobre nosotros</a>
+              <a className="nav-link" href="/colegio">Sobre nosotros</a>
             </li>
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/contact">Contacto y Soporte</a>
