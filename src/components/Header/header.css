@@ -8,6 +8,35 @@
   padding: 10px;
 }
 
+.long-text {
+  flex-wrap: nowrap !important; /* Evita el salto de línea */
+  white-space: nowrap !important; /* Evita el salto de línea */
+}
+
+.linkhide {
+  text-decoration: none;
+  color: black;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#columns-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerlogo {
+  flex-wrap: nowrap !important;
+}
+
+.linksheader {
+  justify-content: flex-end !important;
+}
+
 .navbarprincipal {
   background-color: #334779 !important;
   color: white !important;
