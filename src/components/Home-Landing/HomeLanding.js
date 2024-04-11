@@ -36,15 +36,15 @@ function HomeLanding() {
             <div className="carousel-item active">
               <img src={EntradaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
-                <h5>Admisiones ciclo lectivo 2025</h5>
-                <p>Consultá por nuestros cupos para todos los niveles y asegurá una educación de calidad para vos y para tus hijos.</p>
+                <h5 className='text-shadow'>Admisiones ciclo lectivo 2025</h5>
+                <p className='text-shadow'>Consultá por nuestros cupos para todos los niveles y asegurá una educación de calidad para vos y para tus hijos.</p>
               </div>
             </div>
             <div className="carousel-item">
               <img src={ActoFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5 className='text-shadow'>Second slide label</h5>
+                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
           </div>
@@ -76,16 +76,16 @@ function HomeLanding() {
             <div className="carousel-item active">
               <img src={InicialFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
-                <h5>Nivel Inicial</h5>
-                <p>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
+                <h5 className='text-shadow'>Nivel Inicial</h5>
+                <p className='text-shadow'>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
                 <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>
             <div className="carousel-item">
               <img src={JardinFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5 className='text-shadow'>Second slide label</h5>
+                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
           </div>
@@ -117,16 +117,16 @@ function HomeLanding() {
             <div className="carousel-item active">
               <img src={PrimarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
-                <h5>Nivel Primario</h5>
-                <p>Transformar las caracteristicas del niño actual en un individuo con conocimientos aplicables a la realidad.</p>
+                <h5 className='text-shadow'>Nivel Primario</h5>
+                <p className='text-shadow'>Transformar las caracteristicas del niño actual en un individuo con conocimientos aplicables a la realidad.</p>
                 <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>
             <div className="carousel-item">
               <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5 className='text-shadow'>Second slide label</h5>
+                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
           </div>
@@ -158,16 +158,16 @@ function HomeLanding() {
             <div className="carousel-item active">
               <img src={SecundarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
-                <h5>Nivel Secundario</h5>
-                <p>Formar alumnos libres, dinámicos, creativos, responsables, capaces de ser protagonistas y transformadores de la sociedad en la que viven.</p>
+                <h5 className='text-shadow'>Nivel Secundario</h5>
+                <p className='text-shadow'>Formar alumnos libres, dinámicos, creativos, responsables, capaces de ser protagonistas y transformadores de la sociedad en la que viven.</p>
                 <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>
             <div className="carousel-item">
               <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5 className='text-shadow'>Second slide label</h5>
+                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
           </div>
@@ -199,16 +199,16 @@ function HomeLanding() {
             <div className="carousel-item active">
               <img src={TerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
-                <h5>Nivel Terciario</h5>
-                <p>Formar docentes capacitados para que se desempeñen en Educación Primaria y Educación Inicial sobre la base de los fundamentos filosóficos, psico- pedagógicos y ético- profesionales.</p>
+                <h5 className='text-shadow'>Nivel Terciario</h5>
+                <p className='text-shadow'>Formar docentes capacitados para que se desempeñen en Educación Primaria y Educación Inicial sobre la base de los fundamentos filosóficos, psico- pedagógicos y ético- profesionales.</p>
                 <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>
             <div className="carousel-item">
               <img src={ChicasTerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5 className='text-shadow'>Second slide label</h5>
+                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
           </div>
