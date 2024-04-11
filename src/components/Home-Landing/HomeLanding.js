@@ -1,10 +1,15 @@
 import React from 'react';
 import EntradaFoto from "./isaentrada.jpg"
+import ActoFoto from "./actofoto.png"
 import SalonFoto from "./isasalon.jpg"
 import InicialFoto from "./inicialpic.png"
+import JardinFoto from "./jardinfoto.png"
 import PrimarioFoto from "./primariopic.png"
 import SecundarioFoto from "./secundariopic.png"
+import ConferenciaFoto from "./conferenciafoto.png"
 import TerciarioFoto from "./terciariofoto.png"
+import ChicasTerciarioFoto from "./chicasterciariofoto.jpg"
+
 import "./HomeLanding.css"
 import Footer from '../Footer/Footer';
 import Swal from 'sweetalert2'
@@ -36,7 +41,7 @@ function HomeLanding() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={ActoFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
@@ -77,7 +82,7 @@ function HomeLanding() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={JardinFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
@@ -159,7 +164,7 @@ function HomeLanding() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
@@ -200,7 +205,7 @@ function HomeLanding() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={ChicasTerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
