@@ -81,7 +81,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="bg-primary text-white text-center p-1" style={{ backgroundColor: '#334779 !important', color: '#fff !important' }}>
+        <div className="bg-primary text-white text-center p-1 derechosreservados" style={{ backgroundColor: '#334779 !important', color: '#fff !important' }}>
           Copyright © 2024 Instituto Santa Ana, todos los derechos reservados.
         </div>
       </div>

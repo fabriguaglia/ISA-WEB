@@ -14,7 +14,7 @@ function HomeLanding() {
   const handleAdmisionesClick = () => {
     Swal.fire({
       icon: 'info',
-      title: 'Disculpe las molestias0',
+      title: 'Disculpe las molestias',
       text: 'Página en construcción'
     });
   };
@@ -113,7 +113,7 @@ function HomeLanding() {
               <img src={PrimarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <h5>Nivel Primario</h5>
-                <p>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
+                <p>Transformar las caracteristicas del niño actual en un individuo con conocimientos aplicables a la realidad.</p>
                 <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>
@@ -154,7 +154,7 @@ function HomeLanding() {
               <img src={SecundarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <h5>Nivel Secundario</h5>
-                <p>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
+                <p>Formar alumnos libres, dinámicos, creativos, responsables, capaces de ser protagonistas y transformadores de la sociedad en la que viven.</p>
                 <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>
@@ -195,7 +195,7 @@ function HomeLanding() {
               <img src={TerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <h5>Nivel Terciario</h5>
-                <p>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
+                <p>Formar docentes capacitados para que se desempeñen en Educación Primaria y Educación Inicial sobre la base de los fundamentos filosóficos, psico- pedagógicos y ético- profesionales.</p>
                 <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>

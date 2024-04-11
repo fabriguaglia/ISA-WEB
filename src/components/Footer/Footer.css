@@ -32,6 +32,10 @@ footer {
   display: flex;
 }
 
+.derechosreservados {
+  background-color: #334779 !important;
+}
+
 .address-section,
 .map-section {
   flex: 1;

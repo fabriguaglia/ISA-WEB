@@ -39,46 +39,9 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="additional-section">
-        <div className="additional-section-left">
-          <div className="additional-item">
-            <label htmlFor="sector">SECTOR A CONSULTAR:</label>
-            <select name="sector" id="sector" className="additional-input">
-              <option value="Administración">Administración</option>
-              <option value="Nivel Inicial">Nivel Inicial</option>
-              <option value="Nivel Primario">Nivel Primario</option>
-              <option value="Nivel Secundario">Nivel Secundario</option>
-              <option value="Nivel Terciario-Profesorado">Nivel Terciario-Profesorado</option>
-              <option value="Nivel Universitario">Nivel Universitario</option>
-            </select>
-          </div>
-          <div className="additional-item">
-            <label htmlFor="nombre">NOMBRE:</label>
-            <input className="additional-input" type="text" id="nombre" />
-          </div>
-          <div className="additional-item">
-            <label htmlFor="email">E.MAIL:</label>
-            <input className="additional-input" type="email" id="email" />
-          </div>
-          <div className="additional-item">
-            <label htmlFor="telefono">TELÉFONO:</label>
-            <input className="additional-input" type="tel" id="telefono" />
-          </div>
-          <div className="additional-item">
-            <label htmlFor="horario">HORARIO DE CONTACTO:</label>
-            <input className="additional-input" type="text" id="horario" />
-          </div>
-          <div className="additional-item">
-            <label htmlFor="direccion">DIRECCIÓN:</label>
-            <input className="additional-input" type="text" id="direccion" />
-          </div>
+      <div className="bg-primary text-white text-center p-1 derechosreservados" style={{ backgroundColor: '#334779 !important', color: '#fff !important' }}>
+          Copyright © 2024 Instituto Santa Ana, todos los derechos reservados.
         </div>
-        <div className="additional-section-right">
-          <textarea className="additional-textarea" rows="4" cols="50" placeholder="MENSAJE:"></textarea>
-          <br />
-          <input type="submit" value="Enviar" className="additional-button" />
-        </div>
-      </div>
     </footer>
   )
 }

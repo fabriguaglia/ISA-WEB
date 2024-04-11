@@ -6,8 +6,8 @@
 
 .carousel-item img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 300px; /* Establece un tamaño fijo para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor manteniendo la relación de aspecto */
 }
 
 .carousel-img {
