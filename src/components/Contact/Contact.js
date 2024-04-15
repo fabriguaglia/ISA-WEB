@@ -1,44 +1,63 @@
 import React from 'react';
-import './Contact.css'; 
+import './Contact.css';
 
 function Contact() {
   return (
-    <>
-      <div className="container text-center">
-        <div className="row">
-          <div className="col">
-            <br />
-            <h4>Contactanos</h4>
-          </div>
-        </div>
-      </div>
+    <div className="container text-center">
+      <h4>Contactenos</h4>
 
-      <div className="container text-center">
-        <div className="row">
-          <div className="col">
-            <form>
-              <div className="form-group">
-                <label htmlFor="nombre"></label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email"></label>
-                <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="mensaje"></label>
-                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
-              </div>
-              <button type="submit">Enviar</button>
-            </form>
-          </div>
-          <div className="linea-vertical"></div>
-          <div className="col">
-            Column
+      <div className="row align-items-start">
+        <div className="col">
+          <form>
+            <div className="form-group">
+              <label htmlFor="nombre">Nombre Completo:</label>
+              <input type="text" id="nombre" name="nombre" className="form-control" placeholder="Ingrese su nombre completo" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" className="form-control" placeholder="Ingrese su correo electrónico" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="sector">Sector a consultar:</label>
+              <select id="sector" name="sector" className="form-control" required>
+                <option value="">Seleccione un sector</option>
+                <option value="Administracion">Administración</option>
+                <option value="Nivel Inicial">Nivel Inicial</option>
+                <option value="Nivel Primario">Nivel Primario</option>
+                <option value="Nivel Secundario">Nivel Secundario</option>
+                <option value="Nivel Terciario-Profesorado">Nivel Terciario-Profesorado</option>
+                <option value="Nivel Universitario">Nivel Universitario</option>
+              </select>
+            </div>
+            <div className="form-group">
+              <label htmlFor="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" className="form-control" placeholder="Escriba su mensaje aquí" rows="5" required></textarea>
+            </div>
+            <button type="submit" className="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <div className="col">
+          <div className="linea-azul"></div>
+        </div>
+        <div className="col">
+          <div className="info-right">
+            <h5>Enlaces útiles</h5>
+            <ul>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <h5>Recursos adicionales</h5>
+            <ul>
+              <li><a href="#">Preguntas frecuentes (FAQ)</a></li>
+            </ul>
+            <h5>Estado del sistema</h5>
+            <p>Actualizado</p>
+            <h5>Contactos</h5>
+            <p>Correo electrónico: admin@santa-ana.edu.ar</p>
+            <p>Teléfono: +54 11 4740 1994<br />+54 11 4740 5981</p>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -432,14 +432,6 @@
     height: 20px;
     position: absolute;
   }
-.linea-azul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px !important; /* Ancho de la línea */
-  height: 100vh; /* Altura igual a la altura de la ventana del navegador */
-  background-color: blue;
-}
 
 .linea-vertical {
   width: 2px !important; /* Ancho de la línea vertical */
@@ -449,4 +441,23 @@
 }
 .form-group {
   margin-bottom: 40px; /* Dos líneas de espacio entre cada grupo de formulario */
+}
+.linea-vertical {
+  width: 2px !important; /* Ancho de la línea vertical */
+  background-color: #334779; /* Color de fondo */
+  height: 100%; /* Altura igual a la altura del contenedor */
+  padding: 0;
+}
+
+.info-right {
+  margin-top: 50px; /* Ajusta según sea necesario */
+}
+.linea-azul {
+  position: relative; /* Cambiamos la posición a relativa para que sea relativa al contenedor */
+  width: 0.5%;
+  height: 500px; /* Aumentamos el grosor de la línea */
+  background-color: blue;
+  margin-top: 20px; /* Ajustamos la distancia desde arriba */
+  margin-bottom: 20px; /* Ajustamos la distancia desde abajo */
+  margin-right: 200px;
 }
