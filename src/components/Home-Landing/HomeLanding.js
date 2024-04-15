@@ -17,6 +17,13 @@ import ConferenciaFoto from "./conferenciafoto.png"
 import TerciarioFoto from "./terciariofoto.png"
 import ChicasTerciarioFoto from "./chicasterciariofoto.jpg"
 
+import Tigre from "./tigre.png"
+import Uflo from "./uflo.png"
+import Cambridge from "./cambridge.png"
+import Ipar from "./ipar.png"
+import Cisco from "./cisco.png"
+import BlasPascal from "./blaspascal.png"
+
 import "./HomeLanding.css"
 import Footer from '../Footer/Footer';
 import Swal from 'sweetalert2'
@@ -271,6 +278,34 @@ function HomeLanding() {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
+        </div>
+      </div>
+      <div class="container text-center">
+        <p class="fs-2 items-desc titleinicial">Convenios con otras instituciones</p>
+        <hr className='divisor'/>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <img className='img-fluid img-conv' src={Tigre}/>
+            </div>
+            <div class="col">
+              <img className='img-fluid img-conv' src={Uflo}/>
+            </div>
+            <div class="col">
+              <img className='img-fluid img-conv' src={Cambridge}/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img className='img-fluid img-conv' src={Ipar}/>
+            </div>
+            <div class="col">
+              <img className='img-fluid img-conv' src={Cisco}/>
+            </div>
+            <div class="col">
+              <img className='img-fluid img-conv' src={BlasPascal}/>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
