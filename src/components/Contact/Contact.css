@@ -453,7 +453,6 @@
   margin-top: 50px; /* Ajusta según sea necesario */
 }
 .linea-azul {
-  position: relative; /* Cambiamos la posición a relativa para que sea relativa al contenedor */
   width: 0.5%;
   height: 500px; /* Aumentamos el grosor de la línea */
   background-color: blue;
