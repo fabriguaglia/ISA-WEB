@@ -1,6 +1,13 @@
 import React from 'react';
 import EntradaFoto from "./isaentrada.jpg"
+import AulasDigitales from "./aulasdigitales.jpg"
 import ActoFoto from "./actofoto.png"
+import MusicaPic from "./musica.jpg"
+import EducacionFisica from "./edfisica.jpg"
+import CampamentosPic from "./campamentos.jpg"
+import SalidasDidacticas from "./salidasdidacticas.jpg"
+import PropuestasDidacticas from "./propuestasdidacticas.jpg"
+import InglesPic from "./Ingles.jpg"
 import SalonFoto from "./isasalon.jpg"
 import InicialFoto from "./inicialpic.png"
 import JardinFoto from "./jardinfoto.png"
@@ -31,6 +38,12 @@ function HomeLanding() {
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptionsTop1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptionsTop1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsTop1" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsTop1" data-bs-slide-to="3" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsTop1" data-bs-slide-to="4" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsTop1" data-bs-slide-to="5" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsTop1" data-bs-slide-to="6" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsTop1" data-bs-slide-to="7" aria-label="Slide 2"></button>
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -41,10 +54,52 @@ function HomeLanding() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={ActoFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={AulasDigitales} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5 className='text-shadow'>Second slide label</h5>
-                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
+                <h5 className='text-shadow'>Aulas digitalizadas</h5>
+                <p className='text-shadow'>Una experiencia educativa moderna y dinámica gracias a nuestras aulas equipadas con tecnología.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src={MusicaPic} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <div className="carousel-caption">
+                <h5 className='text-shadow'>Música</h5>
+                <p className='text-shadow'>Actos musicales emocionantes. Cultivamos el talento y la creatividad de nuestros estudiantes.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src={EducacionFisica} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <div className="carousel-caption">
+                <h5 className='text-shadow'>Educación Física</h5>
+                <p className='text-shadow'>Nuestros programas deportivos ofrecen una experiencia enriquecedora que promueve el bienestar físico y mental de todos los alumnos.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src={CampamentosPic} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <div className="carousel-caption">
+                <h5 className='text-shadow'>Campamentos</h5>
+                <p className='text-shadow'>Se desarrollan habilidades de liderazgo, trabajo en equipo y resiliencia, creando recuerdos inolvidables mientras exploran el mundo que los rodea.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src={SalidasDidacticas} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <div className="carousel-caption">
+                <h5 className='text-shadow'>Salidas didácticas</h5>
+                <p className='text-shadow'>Exploramos el mundo real, enriqueciendo el aprendizaje con experiencias prácticas y contextuales visitando desde museos hasta empresas locales.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src={PropuestasDidacticas} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <div className="carousel-caption">
+                <h5 className='text-shadow'>Propuestas didácticas</h5>
+                <p className='text-shadow'>Despertamos la curiosidad y el compromiso de nuestros estudiantes. Desde proyectos de investigación hasta simulaciones interactivas.</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src={InglesPic} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <div className="carousel-caption">
+                <h5 className='text-shadow'>Inglés</h5>
+                <p className='text-shadow'>Preparamos a los estudiantes para los exámenes internacionales de Cambridge en inglés, garantizando un sólido dominio del idioma para el éxito global.</p>
               </div>
             </div>
           </div>
@@ -84,8 +139,7 @@ function HomeLanding() {
             <div className="carousel-item">
               <img src={JardinFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5 className='text-shadow'>Second slide label</h5>
-                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
+                <p className='text-shadow'>Fomentamos la curiosidad, creatividad y habilidades sociales desde una edad temprana.</p>
               </div>
             </div>
           </div>
@@ -125,8 +179,7 @@ function HomeLanding() {
             <div className="carousel-item">
               <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5 className='text-shadow'>Second slide label</h5>
-                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
+                <p className='text-shadow'>Promovemos el desarrollo de habilidades fundamentales, el pensamiento crítico y el amor por el aprendizaje, preparando a los estudiantes para un futuro brillante.</p>
               </div>
             </div>
           </div>
@@ -166,8 +219,7 @@ function HomeLanding() {
             <div className="carousel-item">
               <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5 className='text-shadow'>Second slide label</h5>
-                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
+                <p className='text-shadow'>Inspiramos a los estudiantes a alcanzar su máximo potencial académico y personal. Nuestro enfoque educativo robusto y diversificado promueve el pensamiento crítico, la responsabilidad y la preparación para los desafíos del mundo real.</p>
               </div>
             </div>
           </div>
@@ -207,8 +259,7 @@ function HomeLanding() {
             <div className="carousel-item">
               <img src={ChicasTerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
               <div className="carousel-caption">
-                <h5 className='text-shadow'>Second slide label</h5>
-                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
+                <p className='text-shadow'>Ofrecemos una formación integral y especializada para futuros educadores. Nuestro enfoque se centra en el desarrollo de habilidades pedagógicas sólidas, la experiencia práctica en el aula y el compromiso con la excelencia educativa.</p>
               </div>
             </div>
           </div>

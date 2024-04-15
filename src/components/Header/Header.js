@@ -28,7 +28,7 @@ const Header = () => {
         <div className="d-flex align-items-center">
           <a href="/blog"><button type="button" className="btn textcolor" >Blog</button></a>
           <a href="https://login.microsoftonline.com/"><button type="button" className="btn textcolor">Office 365</button></a>
-          <a href="https://www.santillanaconnect.com/Account/Login/"><button type="button" className="btn btn-danger textcolor" >AulaVirtual</button></a>
+          <a href="https://santillanacompartir.com.ar/"><button type="button" className="btn btn-danger textcolor" >AulaVirtual</button></a>
         </div>
       </div>
       <nav className="navbar bg-body-tertiary">
@@ -45,13 +45,13 @@ const Header = () => {
           <div className="text-end ms-auto">
             <div className="row">
               <div className="col long-text">
-                <a href='/niveles' className='linkhide'>Niveles</a>
+                <a onClick={handleAdmisionesClick} className='linkhide'>Niveles</a>
               </div>
               <div className="col long-text">
-                <a href='/colegio' className='linkhide'>Sobre nosotros</a>
+                <a onClick={handleAdmisionesClick} className='linkhide'>Sobre nosotros</a>
               </div>
               <div className="col long-text">
-                <a href='/contact' className='linkhide'>Contacto</a>
+                <a onClick={handleAdmisionesClick} className='linkhide'>Contacto</a>
               </div>
             </div>
           </div>
@@ -82,10 +82,10 @@ const Header = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/colegio">Sobre nosotros</a>
+              <a className="nav-link" onClick={handleAdmisionesClick}>Sobre nosotros</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/contact">Contacto y Soporte</a>
+              <a className="nav-link active" aria-current="page" onClick={handleAdmisionesClick}>Contacto y Soporte</a>
             </li>
           </ul>
         </div>
