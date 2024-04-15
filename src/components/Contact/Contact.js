@@ -3,11 +3,10 @@ import './Contact.css';
 
 function Contact() {
   return (
-    <div className="container text-center">
-      <h4>Contactenos</h4>
-
-      <div className="row align-items-start">
-        <div className="col">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6">
+          <h4>Contactenos</h4>
           <form>
             <div className="form-group">
               <label htmlFor="nombre">Nombre Completo:</label>
@@ -36,25 +35,20 @@ function Contact() {
             <button type="submit" className="btn btn-primary">Enviar</button>
           </form>
         </div>
-        <div className="col">
-          <div className="linea-azul"></div>
-        </div>
-        <div className="col">
-          <div className="info-right">
-            <h5>Enlaces útiles</h5>
-            <ul>
-              <li><a href="#">Blog</a></li>
-            </ul>
-            <h5>Recursos adicionales</h5>
-            <ul>
-              <li><a href="#">Preguntas frecuentes (FAQ)</a></li>
-            </ul>
-            <h5>Estado del sistema</h5>
-            <p>Actualizado</p>
-            <h5>Contactos</h5>
-            <p>Correo electrónico: admin@santa-ana.edu.ar</p>
-            <p>Teléfono: +54 11 4740 1994<br />+54 11 4740 5981</p>
-          </div>
+        <div className="col-md-6">
+          <h5>Enlaces útiles</h5>
+          <ul>
+            <li>Blog</li>
+          </ul>
+          <h5>Recursos adicionales</h5>
+          <ul>
+            <li>Preguntas frecuentes (FAQ)</li>
+          </ul>
+          <h5>Estado del sistema</h5>
+          <p>Actualizado</p>
+          <h5>Contactos</h5>
+          <p>Correo electrónico: admin@santa-ana.edu.ar</p>
+          <p>Teléfono: +54 11 4740 1994 / +54 11 4740 5981</p>
         </div>
       </div>
     </div>
