@@ -282,7 +282,7 @@ function HomeLanding() {
         </div>
       </div>
       <div class="container text-center">
-        <p class="fs-3 items-desc titleinicial">Convenios con otras instituciones</p>
+        <p class="fs-3 items-desc titleinicial items-desc text-center">Convenios con otras instituciones</p>
         <hr className='divisor'/>
         <div class="container text-center">
           <img className='img-fluid img-conv' src={ConveniosFotos}/>
