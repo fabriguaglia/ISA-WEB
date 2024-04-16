@@ -51,7 +51,7 @@ const Header = () => {
                 <a onClick={handleAdmisionesClick} className='linkhide'>Sobre nosotros</a>
               </div>
               <div className="col long-text">
-                <a onClick={handleAdmisionesClick} className='linkhide'>Contacto</a>
+                <a href='contact' className='linkhide'>Contacto</a>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Header = () => {
               <a className="nav-link" onClick={handleAdmisionesClick}>Sobre nosotros</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" onClick={handleAdmisionesClick}>Contacto y Soporte</a>
+              <a className="nav-link active" aria-current="page" href='/contact'>Contacto y Soporte</a>
             </li>
           </ul>
         </div>

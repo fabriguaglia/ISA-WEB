@@ -52,8 +52,5 @@
 
 .img-conv
 {
-  max-width: 150px !important;
-  margin: 0;
-  overflow: hidden !important;
-  width: auto;
+  margin-bottom: 25px;
 }
