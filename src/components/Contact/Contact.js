@@ -16,7 +16,8 @@ function Contact() {
     <div className="container">
       <div className="row">
         <div className="col-md-6">
-          <h4>Contactenos</h4>
+        <p class="fs-3 items-desc titleinicial items-desc text-center">Contactenos</p>
+          <hr className='divisor'/>
           {formSubmitted ? (
             <p>¡Gracias! Su mensaje ha sido enviado correctamente.</p>
           ) : (
