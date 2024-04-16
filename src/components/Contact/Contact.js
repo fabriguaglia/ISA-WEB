@@ -50,7 +50,7 @@ function Contact() {
             </form>
           )}
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 mt-4 mt-md-0">
           <h5>Enlaces útiles</h5>
           <ul>
             <li>Blog</li>
