@@ -59,9 +59,14 @@ function Contact() {
           <ul>
             <li>Preguntas frecuentes (FAQ)</li>
           </ul>
-          <h5>Estado del sistema</h5>
-          <p>Actualizado</p>
-          <h5>Contactos</h5>
+          <h5 className="mb-3">Estado del sistema</h5>
+          <div className="d-flex align-items-center">
+            <p className="mb-0">Actualizado</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="blue" className="bi bi-check2 ml-2" viewBox="0 0 16 16">
+              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+            </svg>
+          </div>
+          <h5 className="mt-4">Contactos</h5>
           <p>Correo electrónico: admin@santa-ana.edu.ar</p>
           <p>Teléfono: +54 11 4740 1994 / +54 11 4740 5981</p>
         </div>
