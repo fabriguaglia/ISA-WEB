@@ -1,36 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from "react";
+import { Timeline } from 'react-twitter-widgets'
 
-const Blog = () => {
-  const [tweets, setTweets] = useState([]);
-
-  useEffect(() => {
-    const fetchTweets = async () => {
-      try {
-        const response = await axios.get('/api/twitter');
-        if (response.data) {
-          setTweets(response.data);
-        } else {
-          setTweets([]);
-        }
-      } catch (error) {
-        console.error('Error fetching tweets:', error);
-      }
-    };    
-
-    fetchTweets();
-  }, []);
-
+function Blog() {
+    
   return (
     <div>
-      <h2>Últimos 3 Tweets:</h2>
-      <ul>
-        {tweets.map((tweet) => (
-          <li key={tweet.id}>{tweet.text}</li>
-        ))}
-      </ul>
+      <Timeline dataSource={{ sourceType: "profile", screenName: "Inst_Santa_Ana" }}  options={{height: "400" }}/>
     </div>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog

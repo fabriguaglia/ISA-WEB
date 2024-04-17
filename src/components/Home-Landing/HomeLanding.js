@@ -28,6 +28,7 @@ import ConveniosFotos from "./conveniosfotos.png"
 import "./HomeLanding.css"
 import Footer from '../Footer/Footer';
 import Swal from 'sweetalert2'
+import Blog from '../BlogTwitter/Blog';
 
 function HomeLanding() {
 
@@ -281,10 +282,22 @@ function HomeLanding() {
           </button>
         </div>
       </div>
-      <div class="container text-center">
-        <p class="fs-3 items-desc titleinicial items-desc text-center">Convenios con otras instituciones</p>
+      <div className="container-fluid text-center barracolores">
+        <div className="row">
+          <div className="col azul"></div>
+          <div className="col rojo"></div>
+          <div className="col azul"></div>
+          <div className="col rojo"></div>
+        </div>
+      </div>
+      <div className="container text-center">
+        <p className="fs-3 items-desc titleinicial items-desc text-center">¡Últimas novedades!</p>
+      </div>
+      <Blog />
+      <div className="container text-center">
+        <p className="fs-3 items-desc titleinicial items-desc text-center">Convenios con otras instituciones</p>
         <hr className='divisor'/>
-        <div class="container text-center">
+        <div className="container text-center">
           <img className='img-fluid img-conv' src={ConveniosFotos}/>
         </div>
       </div>
