@@ -7,12 +7,16 @@ const Blog = () => {
   useEffect(() => {
     const fetchTweets = async () => {
       try {
-        const response = await axios.get('/api/twitter'); // Ruta para el servidor
-        setTweets(response.data);
+        const response = await axios.get('/api/twitter');
+        if (response.data) {
+          setTweets(response.data);
+        } else {
+          setTweets([]);
+        }
       } catch (error) {
         console.error('Error fetching tweets:', error);
       }
-    };
+    };    
 
     fetchTweets();
   }, []);
