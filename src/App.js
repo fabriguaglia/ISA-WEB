@@ -4,6 +4,7 @@ import HomeLanding from './components/Home-Landing/HomeLanding';
 import Contact from './components/Contact/Contact';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Inicial from './components/Inicial/Inicial';
+import Blog from './components/BlogTwitter/Blog';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" element={<HomeLanding />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/inicial" element={<Inicial />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
     </Router>
     </>

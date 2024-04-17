@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import Swal from 'sweetalert2'
 
 function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -10,6 +11,14 @@ function Contact() {
 
     // Marcar el formulario como enviado
     setFormSubmitted(true);
+  };
+
+  const handleAdmisionesClick = () => {
+    Swal.fire({
+      icon: 'info',
+      title: 'Disculpe las molestias',
+      text: 'Página en construcción'
+    });
   };
 
   return (
@@ -51,23 +60,23 @@ function Contact() {
           )}
         </div>
         <div className="col-md-6 mt-4 mt-md-0">
-          <h5>Enlaces útiles</h5>
+          <h5 className='margen-enlaces'>Enlaces útiles</h5>
           <ul>
-            <li>Blog</li>
+            <li><a onClick={handleAdmisionesClick}>Blog</a></li>
           </ul>
           <h5>Recursos adicionales</h5>
           <ul>
-            <li>Preguntas frecuentes (FAQ)</li>
+            <li><a onClick={handleAdmisionesClick}>Preguntas frecuentes (FAQ)</a></li>
           </ul>
           <h5 className="mb-3">Estado del sistema</h5>
           <div className="d-flex align-items-center">
             <p className="mb-0">Actualizado</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="blue" className="bi bi-check2 ml-2" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="green" className="bi bi-check2 ml-2" viewBox="0 0 16 16">
               <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
             </svg>
           </div>
           <h5 className="mt-4">Contactos</h5>
-          <p>Correo electrónico: admin@santa-ana.edu.ar</p>
+          <p>Correo electrónico: <a href='mailto:admin@santa-ana.edu.ar'>admin@santa-ana.edu.ar</a></p>
           <p>Teléfono: +54 11 4740 1994 / +54 11 4740 5981</p>
         </div>
       </div>
