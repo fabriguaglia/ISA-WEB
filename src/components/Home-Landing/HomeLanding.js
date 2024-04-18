@@ -293,9 +293,8 @@ function HomeLanding() {
       <div className="container text-center">
         <p className="fs-3 items-desc titleinicial items-desc text-center">¡Últimas novedades!</p>
       </div>
-      <a class="twitter-timeline" data-lang="es" data-height="400" href="https://twitter.com/Inst_Santa_Ana?ref_src=twsrc%5Etfw">Tweets by Inst_Santa_Ana</a> 
-      
-      <div className="container text-center">
+          <Blog></Blog>
+        <div className="container text-center">
         <p className="fs-3 items-desc titleinicial items-desc text-center">Convenios con otras instituciones</p>
         <hr className='divisor'/>
         <div className="container text-center">
