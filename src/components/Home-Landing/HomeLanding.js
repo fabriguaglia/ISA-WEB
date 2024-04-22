@@ -293,9 +293,7 @@ function HomeLanding() {
       <div className="container text-center">
         <p className="fs-3 items-desc titleinicial items-desc text-center">¡Últimas novedades!</p>
       </div>
-      <div class="widget">
-        <a class="twitter-timeline widget-twt" href="https://twitter.com/InstSantaAna" data-widget-id="" data-chrome="nofooter noborders" data-tweet-limit="1" data-aria-polite="assertive">Tweets by @InstSantaAna</a>
-        </div>
+      <a class="twitter-timeline" data-lang="es" data-height="400" href="https://twitter.com/InstSantaAna?ref_src=twsrc%5Etfw">Tweets de InstSantaAna</a>
         <div className="container text-center">
         <p className="fs-3 items-desc titleinicial items-desc text-center">Convenios con otras instituciones</p>
         <hr className='divisor'/>
