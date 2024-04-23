@@ -1,8 +1,6 @@
 import React from 'react'
 import "./inicial.css"
 import Footer from '../Footer/Footer';
-import InicialFoto from "./inicialpic.png"
-import JardinFoto from "./jardinfoto.png"
 import Familiaicon from './FullFamily.png'
 import CorteFoto from "./imagenescorte.jpg"
 import FamiliaSuperpuestaIcon from "./peoplesuperpuesta.png"
@@ -24,6 +22,7 @@ import Salidas from "./salidasdidacticas.jpg"
 import PropuestasDidacticas from "./propuestasdidacticas.jpg"
 import Ingles from "./Ingles.jpg"
 import Swal from 'sweetalert2'
+import InicialCarr from '../../assets/InicialCarr/InicialCarr';
 
 function Inicial() {
 
@@ -38,39 +37,7 @@ function Inicial() {
   return (
     <>
         <div>
-        <div className="container-fluid">
-        <div id="carouselExampleCaptionsBottom1" className="carousel slide" style={{width: "100%"}}>
-          <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptionsBottom1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptionsBottom1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src={InicialFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
-              <div className="carousel-caption">
-                <h5 className='text-shadow'>Nivel Inicial</h5>
-                <p className='text-shadow'>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
-                <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img src={JardinFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
-              <div className="carousel-caption">
-                <h5 className='text-shadow'>Second slide label</h5>
-                <p className='text-shadow'>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-          </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsBottom1" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsBottom1" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+        <InicialCarr />
       <div className="container-fluid text-center barracolores">
         <div className="row">
           <div className="col azul"></div>

@@ -3,6 +3,19 @@
  margin-top: 20px !important;
 }
 
+.fuente
+{
+    font-family: "Playfair Display", serif;
+}
+
+.divisor 
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1;
+    border-top: 3px solid #334779;
+}
+
 .items-desc
 {
     color: #334779;
