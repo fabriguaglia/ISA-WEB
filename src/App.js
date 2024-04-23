@@ -5,7 +5,11 @@ import Contact from './components/Contact/Contact';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Inicial from './components/Inicial/Inicial';
 import ProfileBasic from './components/BlogTwitter/Blog';
+<<<<<<< HEAD
 import Inicialtest from './components/Inicial/Inicialtest';
+=======
+import Inscripciones from './components/Inscripciones/Inscripciones';
+>>>>>>> 5ee28ee00efb9811ccf2ccd9b97c93b162a69299
 
 function App() {
   return (
@@ -17,7 +21,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/inicial" element={<Inicial />} />
           <Route path="/blog" element={<ProfileBasic />} />
+<<<<<<< HEAD
           <Route path="/inicialtest" element={<Inicialtest />} />
+=======
+          <Route path="/inscripciones" element={<Inscripciones />} />
+>>>>>>> 5ee28ee00efb9811ccf2ccd9b97c93b162a69299
         </Routes>
     </Router>
     </>

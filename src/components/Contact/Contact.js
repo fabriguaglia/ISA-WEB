@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -25,22 +25,22 @@ function Contact() {
     <div className="container">
       <div className="row">
         <div className="col-md-6">
-        <p class="fs-3 items-desc titleinicial items-desc text-center">Contactenos</p>
+          <p className="fs-3 items-desc titleinicial items-desc text-center" style={{ color: 'navy' }}>Contactenos</p>
           <hr className='divisor'/>
           {formSubmitted ? (
             <p>¡Gracias! Su mensaje ha sido enviado correctamente.</p>
           ) : (
             <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="nombre">Nombre Completo:</label>
+                <label htmlFor="nombre" style={{ color: 'navy' }}>Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" className="form-control" placeholder="Ingrese su nombre completo" required />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Correo electrónico:</label>
+                <label htmlFor="email" style={{ color: 'navy' }}>Correo electrónico:</label>
                 <input type="email" id="email" name="email" className="form-control" placeholder="Ingrese su correo electrónico" required />
               </div>
               <div className="form-group">
-                <label htmlFor="sector">Sector a consultar:</label>
+                <label htmlFor="sector" style={{ color: 'navy' }}>Sector a consultar:</label>
                 <select id="sector" name="sector" className="form-control" required>
                   <option value="">Seleccione un sector</option>
                   <option value="Administracion">Administración</option>
@@ -52,7 +52,7 @@ function Contact() {
                 </select>
               </div>
               <div className="form-group">
-                <label htmlFor="mensaje">Mensaje:</label>
+                <label htmlFor="mensaje" style={{ color: 'navy' }}>Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" className="form-control" placeholder="Escriba su mensaje aquí" rows="5" required></textarea>
               </div>
               <button type="submit" className="btn btn-primary">Enviar</button>
@@ -62,11 +62,11 @@ function Contact() {
         <div className="col-md-6 mt-4 mt-md-0">
           <h5 className='margen-enlaces'>Enlaces útiles</h5>
           <ul>
-            <li><a onClick={handleAdmisionesClick}>Blog</a></li>
+            <li><a onClick={handleAdmisionesClick} style={{ color: 'navy' }}>Blog</a></li>
           </ul>
           <h5>Recursos adicionales</h5>
           <ul>
-            <li><a onClick={handleAdmisionesClick}>Preguntas frecuentes (FAQ)</a></li>
+            <li><a onClick={handleAdmisionesClick} style={{ color: 'navy' }}>Preguntas frecuentes (FAQ)</a></li>
           </ul>
           <h5 className="mb-3">Estado del sistema</h5>
           <div className="d-flex align-items-center">
@@ -76,8 +76,8 @@ function Contact() {
             </svg>
           </div>
           <h5 className="mt-4">Contactos</h5>
-          <p>Correo electrónico: <a href='mailto:admin@santa-ana.edu.ar'>admin@santa-ana.edu.ar</a></p>
-          <p>Teléfono: +54 11 4740 1994 / +54 11 4740 5981</p>
+          <p>Correo electrónico: <a href='mailto:admin@santa-ana.edu.ar' style={{ color: 'navy' }}>admin@santa-ana.edu.ar</a></p>
+          <p>Teléfono: <span style={{ color: 'navy' }}>+54 11 4740 1994 / +54 11 4740 5981</span></p>
         </div>
       </div>
     </div>
