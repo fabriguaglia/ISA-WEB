@@ -5,6 +5,7 @@ import Contact from './components/Contact/Contact';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Inicial from './components/Inicial/Inicial';
 import ProfileBasic from './components/BlogTwitter/Blog';
+import Inicialtest from './components/Inicial/Inicialtest';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/inicial" element={<Inicial />} />
           <Route path="/blog" element={<ProfileBasic />} />
+          <Route path="/inicialtest" element={<Inicialtest />} />
         </Routes>
     </Router>
     </>
