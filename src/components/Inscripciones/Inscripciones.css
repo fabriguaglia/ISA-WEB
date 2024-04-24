@@ -1,0 +1,19 @@
+/* styles.css */
+
+.inscripciones-title {
+    color: blue;
+    margin-top: 50px; /* Adjust as needed for vertical alignment */
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto asegura que el contenedor ocupe toda la altura de la pantalla */
+    flex-direction: column; /* Esto colocará los elementos uno encima del otro */
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
