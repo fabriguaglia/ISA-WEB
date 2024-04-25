@@ -12,7 +12,7 @@ function PrimarioCarr() {
         });
       };
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
         <div id="carouselExampleCaptionsBottom2" className="carousel slide" style={{width: "100%"}}>
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptionsBottom2" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

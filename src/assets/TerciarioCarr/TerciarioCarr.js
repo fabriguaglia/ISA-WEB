@@ -12,7 +12,7 @@ function TerciarioCarr() {
         });
       };
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
         <div id="carouselExampleCaptionsBottom4" className="carousel slide" style={{width: "100%"}}>
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptionsBottom4" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -28,7 +28,7 @@ function TerciarioCarr() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={ChicasTerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={ChicasTerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <p className='text-shadow'>Ofrecemos una formación integral y especializada para futuros educadores. Nuestro enfoque se centra en el desarrollo de habilidades pedagógicas sólidas, la experiencia práctica en el aula y el compromiso con la excelencia educativa.</p>
               </div>

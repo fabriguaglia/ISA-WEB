@@ -13,7 +13,7 @@ function InicialCarr() {
     };
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <div id="carouselExampleCaptionsBottom1" className="carousel slide" style={{ width: "100%" }}>
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptionsBottom1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -21,7 +21,7 @@ function InicialCarr() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={InicialPic} className="d-block carousel-img" alt="Foto Nivel Inicial" />
+                        <img src={InicialPic} className="d-block carousel-img" alt="Foto Nivel Inicial" style={{objectPosition: 'center center'}}/>
                         <div className="carousel-caption">
                             <h5 className='text-shadow'>Nivel Inicial</h5>
                             <p className='text-shadow'>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
@@ -29,7 +29,7 @@ function InicialCarr() {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={JardinFoto} className="d-block carousel-img" alt="Foto Jardín" />
+                        <img src={JardinFoto} className="d-block carousel-img" alt="Foto Jardín" style={{objectPosition: 'center center'}}/>
                         <div className="carousel-caption">
                             <p className='text-shadow'>Fomentamos la curiosidad, creatividad y habilidades sociales desde una edad temprana.</p>
                         </div>

@@ -12,7 +12,7 @@ function SecundarioCarr() {
         });
       };
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
         <div id="carouselExampleCaptionsBottom3" className="carousel slide" style={{width: "100%"}}>
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptionsBottom3" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -28,7 +28,7 @@ function SecundarioCarr() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <p className='text-shadow'>Inspiramos a los estudiantes a alcanzar su máximo potencial académico y personal. Nuestro enfoque educativo robusto y diversificado promueve el pensamiento crítico, la responsabilidad y la preparación para los desafíos del mundo real.</p>
               </div>

@@ -10,7 +10,7 @@ import InglesPic from "./Ingles.jpg"
 
 function PrincCarr() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
         <div id="carouselExampleCaptionsTop1" className="carousel slide" style={{width: "100%"}}>
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptionsTop1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -38,42 +38,42 @@ function PrincCarr() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={MusicaPic} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={MusicaPic} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow'>Música</h5>
                 <p className='text-shadow'>Actos musicales emocionantes. Cultivamos el talento y la creatividad de nuestros estudiantes.</p>
               </div>
             </div>  
             <div className="carousel-item">
-              <img src={EducacionFisica} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={EducacionFisica} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow'>Educación Física</h5>
                 <p className='text-shadow'>Nuestros programas deportivos ofrecen una experiencia enriquecedora que promueve el bienestar físico y mental de todos los alumnos.</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={CampamentosPic} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={CampamentosPic} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow'>Campamentos</h5>
                 <p className='text-shadow'>Se desarrollan habilidades de liderazgo, trabajo en equipo y resiliencia, creando recuerdos inolvidables mientras exploran el mundo que los rodea.</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={SalidasDidacticas} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={SalidasDidacticas} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow'>Salidas didácticas</h5>
                 <p className='text-shadow'>Exploramos el mundo real, enriqueciendo el aprendizaje con experiencias prácticas y contextuales visitando desde museos hasta empresas locales.</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={PropuestasDidacticas} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={PropuestasDidacticas} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow'>Propuestas didácticas</h5>
                 <p className='text-shadow'>Despertamos la curiosidad y el compromiso de nuestros estudiantes. Desde proyectos de investigación hasta simulaciones interactivas.</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={InglesPic} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={InglesPic} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow'>Inglés</h5>
                 <p className='text-shadow'>Preparamos a los estudiantes para los exámenes internacionales de Cambridge en inglés, garantizando un sólido dominio del idioma para el éxito global.</p>
