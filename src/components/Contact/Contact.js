@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './Contact.css';
 import Swal from 'sweetalert2';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -21,6 +22,53 @@ function Contact() {
     });
   };
 
+  const form = useRef();
+  const [selectedSector, setSelectedSector] = useState('general');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+    let serviceId, templateId, publicKey;
+  
+    // Configurar serviceId, templateId y publicKey según el sector seleccionado
+    if (selectedSector === 'Administracion') {
+      serviceId = 'service_5c04p2v';
+      templateId = 'template_y3i5ayj';
+      publicKey = 'cCmAKjyxVc1QkGz_O';
+    } else if (selectedSector === 'Nivel Inicial') {
+      serviceId = 'service_7kdn89w';
+      templateId = 'template_oppp37m';
+      publicKey = '0KNLAuH-ohC7XC6QO';
+    } else if (selectedSector === 'Nivel Primario') {
+      serviceId = 'service_7kdn89w';
+      templateId = 'template_v9ittt7';
+      publicKey = '0KNLAuH-ohC7XC6QO';
+    }else if (selectedSector === 'Nivel Secundario') {
+      serviceId = 'service_myx0shn';
+      templateId = 'template_olqt43j';
+      publicKey = '1ayt-2CgzX4V99asL';
+    }else if (selectedSector === 'Nivel Terciario-Profesorado') {
+      serviceId = 'service_myx0shn';
+      templateId = 'template_wmxuwof';
+      publicKey = '1ayt-2CgzX4V99asL';
+    }
+  
+    emailjs
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          window.location.reload(); // Recargar la página después de enviar el formulario con éxito
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+  
+  
   return (
     <div className="container">
       <div className="row">
@@ -30,30 +78,29 @@ function Contact() {
           {formSubmitted ? (
             <p>¡Gracias! Su mensaje ha sido enviado correctamente.</p>
           ) : (
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="form-group">
                 <label htmlFor="nombre" style={{ color: 'navy' }}>Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" className="form-control" placeholder="Ingrese su nombre completo" required />
+                <input type="text" id="nombre" name="user_name" className="form-control" placeholder="Ingrese su nombre completo" required />
               </div>
               <div className="form-group">
                 <label htmlFor="email" style={{ color: 'navy' }}>Correo electrónico:</label>
-                <input type="email" id="email" name="email" className="form-control" placeholder="Ingrese su correo electrónico" required />
+                <input type="email" id="email" name="user_mail" className="form-control" placeholder="Ingrese su correo electrónico" required />
               </div>
               <div className="form-group">
                 <label htmlFor="sector" style={{ color: 'navy' }}>Sector a consultar:</label>
-                <select id="sector" name="sector" className="form-control" required>
+                <select id="sector" name="sector" className="form-control" required value={selectedSector} onChange={(e) => setSelectedSector(e.target.value)}>
                   <option value="">Seleccione un sector</option>
                   <option value="Administracion">Administración</option>
                   <option value="Nivel Inicial">Nivel Inicial</option>
                   <option value="Nivel Primario">Nivel Primario</option>
                   <option value="Nivel Secundario">Nivel Secundario</option>
                   <option value="Nivel Terciario-Profesorado">Nivel Terciario-Profesorado</option>
-                  <option value="Nivel Universitario">Nivel Universitario</option>
                 </select>
               </div>
               <div className="form-group">
                 <label htmlFor="mensaje" style={{ color: 'navy' }}>Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" className="form-control" placeholder="Escriba su mensaje aquí" rows="5" required></textarea>
+                <textarea id="mensaje" name="message" className="form-control" placeholder="Escriba su mensaje aquí" rows="5" required></textarea>
               </div>
               <button type="submit" className="btn btn-primary">Enviar</button>
             </form>
