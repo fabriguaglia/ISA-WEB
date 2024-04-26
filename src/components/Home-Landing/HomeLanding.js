@@ -41,13 +41,13 @@ function HomeLanding() {
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
+            <Tweet id="1783823506372808738" />
+          </div>
+          <div className="col-lg-4">
             <Tweet id="1783553069621432784" />
           </div>
           <div className="col-lg-4">
             <Tweet id="1783263484802634043" />
-          </div>
-          <div className="col-lg-4">
-            <Tweet id="1782718559640236213" />
           </div>
         </div>
       </div>
