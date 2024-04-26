@@ -20,15 +20,16 @@ function PrimarioCarr() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={PrimarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
+              <img src={PrimarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 40%'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow'>Nivel Primario</h5>
                 <p className='text-shadow'>Transformar las caracteristicas del niño actual en un individuo con conocimientos aplicables a la realidad.</p>
-                <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
+                <a href='/niveles'><button type="button" className="btn custom-btn">Ver niveles</button></a>               
+                <button type="button" className="btn custom-btn ms-2" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center top'}} />
+              <img src={SalonFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 40%'}} />
               <div className="carousel-caption">
                 <p className='text-shadow'>Promovemos el desarrollo de habilidades fundamentales, el pensamiento crítico y el amor por el aprendizaje, preparando a los estudiantes para un futuro brillante.</p>
               </div>

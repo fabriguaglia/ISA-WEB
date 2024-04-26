@@ -25,11 +25,12 @@ function InicialCarr() {
                         <div className="carousel-caption">
                             <h5 className='text-shadow'>Nivel Inicial</h5>
                             <p className='text-shadow'>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
-                            <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
+                            <a href='/niveles'><button type="button" className="btn custom-btn">Ver niveles</button></a>               
+                            <button type="button" className="btn custom-btn ms-2" onClick={handleAdmisionesClick}>Admisiones</button>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={JardinFoto} className="d-block carousel-img" alt="Foto Jardín" style={{objectPosition: 'center center'}}/>
+                        <img src={JardinFoto} className="d-block carousel-img" alt="Foto Jardín" style={{objectPosition: 'center 20%'}}/>
                         <div className="carousel-caption">
                             <p className='text-shadow'>Fomentamos la curiosidad, creatividad y habilidades sociales desde una edad temprana.</p>
                         </div>

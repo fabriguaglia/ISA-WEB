@@ -20,15 +20,16 @@ function SecundarioCarr() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={SecundarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
+              <img src={SecundarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 35%'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow'>Nivel Secundario</h5>
                 <p className='text-shadow'>Formar alumnos libres, dinámicos, creativos, responsables, capaces de ser protagonistas y transformadores de la sociedad en la que viven.</p>
-                <button type="button" className="btn custom-btn" onClick={handleAdmisionesClick}>Admisiones</button>
+                <a href='/niveles'><button type="button" className="btn custom-btn">Ver niveles</button></a>               
+                <button type="button" className="btn custom-btn ms-2" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center center'}} />
+              <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 30%'}} />
               <div className="carousel-caption">
                 <p className='text-shadow'>Inspiramos a los estudiantes a alcanzar su máximo potencial académico y personal. Nuestro enfoque educativo robusto y diversificado promueve el pensamiento crítico, la responsabilidad y la preparación para los desafíos del mundo real.</p>
               </div>

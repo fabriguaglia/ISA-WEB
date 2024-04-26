@@ -45,7 +45,7 @@ const Header = () => {
           <div className="text-end ms-auto">
             <div className="row">
               <div className="col long-text">
-                <a onClick={handleAdmisionesClick} className='linkhide'>Niveles</a>
+                <a href='niveles' className='linkhide'>Niveles</a>
               </div>
               <div className="col long-text">
                 <a onClick={handleAdmisionesClick} className='linkhide'>Sobre nosotros</a>
@@ -71,15 +71,7 @@ const Header = () => {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li className="nav-item dropdown">
-              <p className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Niveles
-              </p>
-              <ul className="dropdown-menu">
-                <li><button className="dropdown-item" onClick={handleAdmisionesClick}>Inicial</button></li>
-                <li><button className="dropdown-item" onClick={handleAdmisionesClick}>Primaria</button></li>
-                <li><button className="dropdown-item" onClick={handleAdmisionesClick}>Secundaria</button></li>
-                <li><button className="dropdown-item" onClick={handleAdmisionesClick}>Terciaria</button></li>
-              </ul>
+              <a className="nav-link active" aria-current="page" href='/niveles'>Niveles</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" onClick={handleAdmisionesClick}>Sobre nosotros</a>

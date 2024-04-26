@@ -102,7 +102,7 @@ function Contact() {
                 <label htmlFor="mensaje" style={{ color: 'navy' }}>Mensaje:</label>
                 <textarea id="mensaje" name="message" className="form-control" placeholder="Escriba su mensaje aquí" rows="5" required></textarea>
               </div>
-              <button type="submit" className="btn btn-primary">Enviar</button>
+              <button type="submit" className="btn custom-btn">Enviar</button>
             </form>
           )}
         </div>
@@ -124,7 +124,11 @@ function Contact() {
           </div>
           <h5 className="mt-4">Contactos</h5>
           <p>Correo electrónico: <a href='mailto:admin@santa-ana.edu.ar' style={{ color: 'navy' }}>admin@santa-ana.edu.ar</a></p>
-          <p>Teléfono: <span style={{ color: 'navy' }}>+54 11 4740 1994 / +54 11 4740 5981</span></p>
+          <p>Teléfono: <span style={{ color: 'navy' }}>
+              <a href="tel:+541147401994">+54 11 4740 1994</a> / 
+              <a href="tel:+541147405981">+54 11 4740 5981</a>
+            </span>
+          </p>
         </div>
       </div>
     </div>
