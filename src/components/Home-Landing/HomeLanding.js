@@ -37,6 +37,7 @@ function HomeLanding() {
         
       <div className="container text-center">
         <p className="fs-3 items-desc titleinicial items-desc text-center">¡Últimas novedades!</p>
+        <hr className='divisor'/>
       </div>
       <div className="container">
         <div className="row">
