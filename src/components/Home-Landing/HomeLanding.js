@@ -58,7 +58,7 @@ function HomeLanding() {
             <div className="container text-center">
               <img className='img-fluid img-conv' alt='...' src={ConveniosFotos}/>
             </div>
-      </div>
+        </div>
       <Footer />
     </>
   );
