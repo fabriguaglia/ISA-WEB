@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './Contact.css';
+import Footer from '../Footer/Footer';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
 
@@ -70,7 +71,8 @@ function Contact() {
   
   
   return (
-    <div className="container">
+    <>
+    <div className="container mb-2">
       <div className="row">
         <div className="col-md-6">
           <p className="fs-3 items-desc titleinicial items-desc text-center" style={{ color: 'navy' }}>Contactenos</p>
@@ -132,6 +134,8 @@ function Contact() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
