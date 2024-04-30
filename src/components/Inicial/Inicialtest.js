@@ -12,7 +12,7 @@ import FamilyQuestionIcon from "./familyquestionicon.png"
 import VoiceIcon from "./VoiceIcon.png"
 import ProcessIcon from "./ProcessIcon.png"
 import CaduceusIcon from "./CaduceusIcon.png"
-import PerfilAlumnoPic from "./perfilalumnopic.png"
+import PerfilAlumnoPic from "./perfilalumnopic.jpg"
 import Metas from "./Metaspic.png"
 import Modalidades from "./Modalidades.png"
 
@@ -330,13 +330,13 @@ function Niveles() {
         <BarraColores />
       <div>
         <p class="text-center">
-            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
                 <p className='mb-0 fs-2 fuente'>Objetivos</p>
             </button>
           <hr className='divisor'/>  
         </p>
         
-        <div class="collapse" id="collapseExample">
+        <div class="collapse" id="collapseExample6">
             <div class="card card-body">
             <div class="row row-cols-2 text-center">
     <div class="col items-niveles">
@@ -370,26 +370,28 @@ function Niveles() {
       </div>
       <div>
         <p class="text-center">
-            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
                 <p className='mb-0 fs-2 fuente'>Perfil del Alumno</p>
             </button>
           <hr className='divisor'/>  
         </p>
         
-        <div class="collapse" id="collapseExample4">
-            <div class="card card-body p-0">
-                <img className='img-fluid' src={Metas} alt='50'/>
+        <div class="collapse" id="collapseExample7">
+            <div class="card card-body p-0 row text-center">
+            <p className='items-desc'>Fomentando la innovación y el fortalecimiento de las prácticas exitosas. Esto se logra mediante una reflexión crítica de su propio desempeño y una disposición a colaborar con sus colegas, permitiendo así el crecimiento conjunto a través del intercambio de experiencias y el trabajo en equipo.</p>
+            <img className='img-fluid' src={PerfilAlumnoPic} alt='...'/>
+            <p className='items-desc'>Principalmente les enseñamos a aprender, ya que si quieren acceder a un estudio superior tendrán la capacidad de asimilar conocimientos de otras áreas del saber y si desean incorporarse en el mundo laboral tendrán la capacidad de aprender las constantes modificaciones que se introducen en todos los campos del quehacer humano.</p>
             </div>
         </div>
       </div>
       <p class="text-center">
-            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample">
                 <p className='mb-0 fs-2 fuente'>Modalidades</p>
             </button>
           <hr className='divisor'/>  
         </p>
         
-      <div class="collapse" id="collapseExample4">
+      <div class="collapse" id="collapseExample8">
             <div class="card card-body p-0">
                 <img className='img-fluid' src={Modalidades} alt='50'/>
             </div>
@@ -401,13 +403,13 @@ function Niveles() {
         <BarraColores />
       <div>
         <p class="text-center">
-            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample">
                 <p className='mb-0 fs-2 fuente'>Objetivos</p>
             </button>
           <hr className='divisor'/>  
         </p>
         
-        <div class="collapse" id="collapseExample">
+        <div class="collapse" id="collapseExample9">
             <div class="card card-body">
             <div class="row row-cols-2 text-center">
     <div class="col items-niveles">
@@ -467,13 +469,13 @@ function Niveles() {
       </div>
       <div>
         <p class="text-center">
-            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample">
                 <p className='mb-0 fs-2 fuente'>Metas</p>
             </button>
           <hr className='divisor'/>  
         </p>
         
-        <div class="collapse" id="collapseExample1">
+        <div class="collapse" id="collapseExample10">
             <div class="card card-body">
             <div class="container text-center">
       <div className='row row-cols-2'>
@@ -509,49 +511,17 @@ function Niveles() {
       </div>
       <div>
         <p class="text-center">
-            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample">
                 <p className='mb-0 fs-2 fuente'>Profesorado de educación inicial</p>
             </button>
           <hr className='divisor'/>  
           </p>
-          <div class="collapse" id="collapseExample2">
-              <div class="card card-body">
-              <div className='row row-cols-2 text-center'>
-          <div class="col items-niveles">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#334779" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
-                  <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
-              </svg>
-          <p className='items-desc'>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
-          </div>
-          <div class="col items-niveles">
-              <img width="50" height="50" fill="#334779" class="bi bi-shield-shaded" viewBox="0 0 16 16" src={FamiliaSuperpuestaIcon} alt='familiaicon'/>
-          <p className='items-desc'>Estimular hábitos de integración social, de convivencia grupal, de solidaridad y cooperación y de conservación del medio ambiente.</p>
-          </div>
-          <div class="col items-niveles">
-              <img width="50" height="50" fill="#334779" class="bi bi-shield-shaded" viewBox="0 0 16 16" src={DiversityIcon} alt='familiaicon'/>
-          <p className='items-desc'>Prevenir y atender las desigualdades físicas, psíquicas y sociales.</p>
-          </div>
-          <div class="col items-niveles">
-              <img width="50" height="50" fill="#334779" class="bi bi-shield-shaded" viewBox="0 0 16 16" src={HeartHandIcon} alt='familiaicon'/>
-          <p className='items-desc'>Acompañar en la construcción de valores de solidaridad, cuidado de sí mismo y de los otros.</p>
-          </div>
-          <div class="col items-niveles">
-              <img width="50" height="50" fill="#334779" class="bi bi-shield-shaded" viewBox="0 0 16 16" src={FamilyQuestionIcon} alt='familiaicon'/>
-          <p className='items-desc'>Favorecer el desarrollo progresivo de la identidad, la autonomía y la pertenencia a la comunidad local.</p>
-          </div>
-          <div class="col items-niveles">
-              <img width="50" height="50" fill="#334779" class="bi bi-shield-shaded" viewBox="0 0 16 16" src={VoiceIcon} alt='familiaicon'/>
-          <p className='items-desc'>Fomentar la comunicación, el diálogo y el respeto mutuo entre las familias y la institución.</p>
-          </div>
-          <div class="col items-niveles">
-              <img width="50" height="50" fill="#334779" class="bi bi-shield-shaded" viewBox="0 0 16 16" src={ProcessIcon} alt='familiaicon'/>
-          <p className='items-desc'>Prevenir y atender las desigualdades físicas, psíquicas y sociales.</p>
-          </div>
-          <div class="col items-niveles">
-              <img width="50" height="50" fill="#334779" class="bi bi-shield-shaded" viewBox="0 0 16 16" src={CaduceusIcon} alt='familiaicon'/>
-          <p className='items-desc'>Acompañar en la construcción de valores de solidaridad, cuidado de sí mismo y de los otros.</p>
-          </div>
-        </div>
+          <div class="collapse" id="collapseExample11">
+            <div class="card card-body">
+                <div className='text-center'>
+                    <p className='items-desc fw-bold'>Plan de estudio 2024</p>
+                    <button type="button" className="btn custom-btn">Descargar PDF</button>
+                </div>
             </div>
         </div>
       </div>
