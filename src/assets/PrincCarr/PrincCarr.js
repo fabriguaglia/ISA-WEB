@@ -5,7 +5,7 @@ import AulasDigitales from "./aulasdigitales.jpg"
 import MusicaPic from "./musica.jpg"
 import EducacionFisica from "./edfisica.jpg"
 import CampamentosPic from "./campamentos.jpg"
-import SalidasDidacticas from "./salidasdidacticas.jpg"
+import SalidasDidacticas from "./SalidasDidacticas.png"
 import PropuestasDidacticas from "./propuestasdidacticas.jpg"
 import InglesPic from "./Ingles.jpg"
 

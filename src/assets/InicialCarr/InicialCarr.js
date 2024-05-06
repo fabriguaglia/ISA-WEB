@@ -1,7 +1,7 @@
 import React from 'react';
 import Swal from 'sweetalert2';
-import InicialPic from "./inicialpic.png"
-import JardinFoto from './jardinfoto.png';
+import InicialPic from "./JardinPic.jpg"
+import JardinFoto from './InicialPicc.jpg';
 
 function InicialCarr() {
     const handleAdmisionesClick = () => {

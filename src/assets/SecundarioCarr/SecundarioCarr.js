@@ -1,7 +1,7 @@
 import React from 'react'
 import Swal from 'sweetalert2'
 import SecundarioFoto from "./secundariopic.png"
-import ConferenciaFoto from "./conferenciafoto.png"
+import ConferenciaFoto from "./Secundariopicc.jpeg"
 
 function SecundarioCarr() {
     const handleAdmisionesClick = () => {
