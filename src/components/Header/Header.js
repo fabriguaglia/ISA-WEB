@@ -1,16 +1,8 @@
 import React from 'react';
 import SantaAnaLogo from "./SantaAnaLogo.png"
 import './header.css';
-import Swal from 'sweetalert2'
 
 const Header = () => {
-    const handleAdmisionesClick = () => {
-      Swal.fire({
-        icon: 'info',
-        title: 'Disculpe las molestias',
-        text: 'Página en construcción'
-      });
-    };
   return (
     <>
       <div className="container-fluid navbarprincipal d-flex justify-content-between align-items-center">
@@ -48,7 +40,7 @@ const Header = () => {
                 <a href='niveles' className='linkhide'>Niveles</a>
               </div>
               <div className="col long-text">
-                <a onClick={handleAdmisionesClick} className='linkhide'>Sobre nosotros</a>
+                <a href='elcolegio' className='linkhide'>Sobre nosotros</a>
               </div>
               <div className="col long-text">
                 <a href='contact' className='linkhide'>Contacto</a>
@@ -74,7 +66,7 @@ const Header = () => {
               <a className="nav-link active" aria-current="page" href='/niveles'>Niveles</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" onClick={handleAdmisionesClick}>Sobre nosotros</a>
+              <a className="nav-link" href='elcolegio'>Sobre nosotros</a>
             </li>
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href='/contact'>Contacto y Soporte</a>

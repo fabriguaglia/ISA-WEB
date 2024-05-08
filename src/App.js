@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import ProfileBasic from './components/BlogTwitter/Blog';
 import Inicialtest from './components/Inicial/Inicialtest';
 import Inscripciones from './components/Inscripciones/Inscripciones';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/niveles" element={<Inicialtest />} />
           <Route path="/blog" element={<ProfileBasic />} />
           <Route path="/inscripciones" element={<Inscripciones />} />
+          <Route path="/elcolegio" element={<AboutUs />} />
         </Routes>
     </Router>
     </>
