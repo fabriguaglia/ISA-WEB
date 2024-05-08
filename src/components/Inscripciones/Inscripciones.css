@@ -17,3 +17,8 @@
     text-align: center;
   }
   
+  .custom-btn {
+    background-color: #334779;
+    color: white;
+    border-color: #334779;
+  }

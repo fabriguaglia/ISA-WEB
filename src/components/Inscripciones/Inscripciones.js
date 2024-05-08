@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import PrincCarr from '../../assets/PrincCarr/PrincCarr';
 import BarraColores from '../../assets/BarraColores'
+import Footer from '../Footer/Footer';
 
 function Inscripciones() {
   const [formValues, setFormValues] = useState({
@@ -68,8 +69,8 @@ function Inscripciones() {
     <BarraColores />
     <PrincCarr />
     <BarraColores/>
-      <div className="container mt-5">
-        <h1>Inscripciones</h1>
+      <div className="container mt-3">
+        <h1 className='text-center'>Inscripciones</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="nombreMadre" className="form-label">Nombre Madre/Tutor  </label>
@@ -108,9 +109,10 @@ function Inscripciones() {
               <option value="Nivel terciario">Nivel terciario</option>
             </select>
           </div>
-          <button type="submit" className="btn btn-primary">Enviar</button>
+          <button type="submit" className="btn custom-btn mb-3">Enviar</button>
         </form>
       </div>
+      <Footer />
     </>
   );
 }
