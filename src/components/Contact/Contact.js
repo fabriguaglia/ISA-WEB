@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import './Contact.css';
-import Footer from '../Footer/Footer';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
 
@@ -37,19 +36,19 @@ function Contact() {
       templateId = 'template_y3i5ayj';
       publicKey = 'cCmAKjyxVc1QkGz_O';
     } else if (selectedSector === 'Nivel Inicial') {
-      serviceId = 'service_7kdn89w';
+      serviceId = 'service_c3hj18p';
       templateId = 'template_oppp37m';
       publicKey = '0KNLAuH-ohC7XC6QO';
     } else if (selectedSector === 'Nivel Primario') {
-      serviceId = 'service_7kdn89w';
+      serviceId = 'service_mbx8omp';
       templateId = 'template_v9ittt7';
       publicKey = '0KNLAuH-ohC7XC6QO';
     }else if (selectedSector === 'Nivel Secundario') {
-      serviceId = 'service_myx0shn';
+      serviceId = 'service_ce68lze';
       templateId = 'template_olqt43j';
       publicKey = '1ayt-2CgzX4V99asL';
     }else if (selectedSector === 'Nivel Terciario-Profesorado') {
-      serviceId = 'service_myx0shn';
+      serviceId = 'service_k1hdpro';
       templateId = 'template_wmxuwof';
       publicKey = '1ayt-2CgzX4V99asL';
     }
@@ -71,8 +70,7 @@ function Contact() {
   
   
   return (
-    <>
-    <div className="container mb-2">
+    <div className="container">
       <div className="row">
         <div className="col-md-6">
           <p className="fs-3 items-desc titleinicial items-desc text-center" style={{ color: 'navy' }}>Contactenos</p>
@@ -104,7 +102,7 @@ function Contact() {
                 <label htmlFor="mensaje" style={{ color: 'navy' }}>Mensaje:</label>
                 <textarea id="mensaje" name="message" className="form-control" placeholder="Escriba su mensaje aquí" rows="5" required></textarea>
               </div>
-              <button type="submit" className="btn custom-btn">Enviar</button>
+              <button type="submit" className="btn btn-primary">Enviar</button>
             </form>
           )}
         </div>
@@ -126,16 +124,10 @@ function Contact() {
           </div>
           <h5 className="mt-4">Contactos</h5>
           <p>Correo electrónico: <a href='mailto:admin@santa-ana.edu.ar' style={{ color: 'navy' }}>admin@santa-ana.edu.ar</a></p>
-          <p>Teléfono: <span style={{ color: 'navy' }}>
-              <a href="tel:+541147401994">+54 11 4740 1994</a> / 
-              <a href="tel:+541147405981">+54 11 4740 5981</a>
-            </span>
-          </p>
+          <p>Teléfono: <span style={{ color: 'navy' }}>+54 11 4740 1994 / +54 11 4740 5981</span></p>
         </div>
       </div>
     </div>
-    <Footer />
-    </>
   );
 }
 

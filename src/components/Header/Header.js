@@ -18,7 +18,7 @@ const Header = () => {
           </div>
         </div>
         <div className="d-flex align-items-center">
-          <a href="/blog"><button type="button" className="btn textcolor" >Blog</button></a>
+          <a href="/inscripciones"><button type="button" className="btn textcolor">Inscripciones</button></a>
           <a href="https://login.microsoftonline.com/"><button type="button" className="btn textcolor">Office 365</button></a>
           <a href="https://santillanacompartir.com.ar/"><button type="button" className="btn btn-danger textcolor">Plataforma</button></a>
         </div>
