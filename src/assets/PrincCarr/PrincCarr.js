@@ -34,7 +34,7 @@ function PrincCarr() {
             <div className="carousel-item active">
               <img src={EntradaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 40%'}} />
               <div className="carousel-caption">
-                <h5 className='text-shadow'>Admisiones ciclo lectivo 2025</h5>
+                <h5 className='text-shadow fs-2'>Admisiones ciclo lectivo 2025</h5>
                 <p className='text-shadow'>Consultá por nuestros cupos para todos los niveles y asegurá una educación de calidad para vos y para tus hijos.</p>
                 <a href='/niveles'><button type="button" className="btn custom-btn">Ver niveles</button></a>               
                 <button type="button" className="btn custom-btn ms-2" onClick={handleAdmisionesClick}>Admisiones</button>
@@ -69,7 +69,7 @@ function PrincCarr() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={SalidasDidacticas} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 50%'}} />
+              <img src={SalidasDidacticas} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 30%'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow'>Salidas didácticas</h5>
                 <p className='text-shadow'>Exploramos el mundo real, enriqueciendo el aprendizaje con experiencias prácticas y contextuales visitando desde museos hasta empresas locales.</p>

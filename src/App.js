@@ -7,6 +7,10 @@ import ProfileBasic from './components/BlogTwitter/Blog';
 import Inicialtest from './components/Inicial/Inicialtest';
 import Inscripciones from './components/Inscripciones/Inscripciones';
 import AboutUs from './components/AboutUs/AboutUs';
+import Jardin from './components/Inicial/Niveles/Jardin/Jardin';
+import Primario from './components/Inicial/Niveles/Primario/Primario';
+import Secundario from './components/Inicial/Niveles/Secundario/Secundario';
+import Terciario from './components/Inicial/Niveles/Terciario/Terciario';
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
           <Route path="/blog" element={<ProfileBasic />} />
           <Route path="/inscripciones" element={<Inscripciones />} />
           <Route path="/elcolegio" element={<AboutUs />} />
+          <Route path="/jardin" element={<Jardin />} />
+          <Route path="/primario" element={<Primario />} />
+          <Route path="/secundario" element={<Secundario />} />
+          <Route path="/terciario" element={<Terciario />} />
         </Routes>
     </Router>
     </>

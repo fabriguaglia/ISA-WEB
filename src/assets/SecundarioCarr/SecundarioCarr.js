@@ -1,16 +1,8 @@
 import React from 'react'
-import Swal from 'sweetalert2'
 import SecundarioFoto from "./secundariopic.png"
 import ConferenciaFoto from "./Secundariopicc.jpeg"
 
 function SecundarioCarr() {
-    const handleAdmisionesClick = () => {
-        Swal.fire({
-          icon: 'info',
-          title: 'Disculpe las molestias',
-          text: 'Página en construcción'
-        });
-      };
   return (
     <div className="container-fluid p-0">
         <div id="carouselExampleCaptionsBottom3" className="carousel slide" style={{width: "100%"}}>
@@ -22,14 +14,14 @@ function SecundarioCarr() {
             <div className="carousel-item active">
               <img src={SecundarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 35%'}} />
               <div className="carousel-caption">
-                <h5 className='text-shadow'>Nivel Secundario</h5>
+                <h5 className='text-shadow fs-1'>Nivel Secundario</h5>
                 <p className='text-shadow'>Formar alumnos libres, dinámicos, creativos, responsables, capaces de ser protagonistas y transformadores de la sociedad en la que viven.</p>
-                <a href='/niveles'><button type="button" className="btn custom-btn">Ver niveles</button></a>               
-                <button type="button" className="btn custom-btn ms-2" onClick={handleAdmisionesClick}>Admisiones</button>
+                <a href='/secundario'><button type="button" className="btn custom-btn">Más información</button></a>  
+                <a href='/inscripciones'><button type="button" className="btn custom-btn ms-2">Admisiones</button></a>            
               </div>
             </div>
             <div className="carousel-item">
-              <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 30%'}} />
+              <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 60%'}} />
               <div className="carousel-caption">
                 <p className='text-shadow'>Inspiramos a los estudiantes a alcanzar su máximo potencial académico y personal. Nuestro enfoque educativo robusto y diversificado promueve el pensamiento crítico, la responsabilidad y la preparación para los desafíos del mundo real.</p>
               </div>

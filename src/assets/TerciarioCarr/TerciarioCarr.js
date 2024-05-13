@@ -1,16 +1,8 @@
 import React from 'react'
-import Swal from 'sweetalert2'
 import TerciarioFoto from "./terciariofoto.png"
 import ChicasTerciarioFoto from "./chicasterciariofoto.jpg"
 
 function TerciarioCarr() {
-    const handleAdmisionesClick = () => {
-        Swal.fire({
-          icon: 'info',
-          title: 'Disculpe las molestias',
-          text: 'Página en construcción'
-        });
-      };
   return (
     <div className="container-fluid p-0">
         <div id="carouselExampleCaptionsBottom4" className="carousel slide" style={{width: "100%"}}>
@@ -22,10 +14,10 @@ function TerciarioCarr() {
             <div className="carousel-item active">
               <img src={TerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 40%'}} />
               <div className="carousel-caption">
-                <h5 className='text-shadow'>Nivel Terciario</h5>
+                <h5 className='text-shadow fs-1'>Nivel Terciario</h5>
                 <p className='text-shadow'>Formar docentes capacitados para que se desempeñen en Educación Primaria y Educación Inicial sobre la base de los fundamentos filosóficos, psico- pedagógicos y ético- profesionales.</p>
-                <a href='/niveles'><button type="button" className="btn custom-btn">Ver niveles</button></a>               
-                <button type="button" className="btn custom-btn ms-2" onClick={handleAdmisionesClick}>Admisiones</button>
+                <a href='/terciario'><button type="button" className="btn custom-btn">Más información</button></a>   
+                <a href='inscripciones'><button type="button" className="btn custom-btn ms-2">Admisiones</button></a>
               </div>
             </div>
             <div className="carousel-item">
