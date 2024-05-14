@@ -15,7 +15,7 @@ function TerciarioCarr() {
               <img src={TerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 40%'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow fs-1'>Nivel Terciario</h5>
-                <p className='text-shadow'>Formar docentes capacitados para que se desempeñen en Educación Primaria y Educación Inicial sobre la base de los fundamentos filosóficos, psico- pedagógicos y ético- profesionales.</p>
+                <p className='text-shadow  bg-dark bg-gradient bg-opacity-75'>Formar docentes capacitados para que se desempeñen en Educación Primaria y Educación Inicial sobre la base de los fundamentos filosóficos, psico- pedagógicos y ético- profesionales.</p>
                 <a href='/terciario'><button type="button" className="btn custom-btn">Más información</button></a>   
                 <a href='inscripciones'><button type="button" className="btn custom-btn ms-2">Admisiones</button></a>
               </div>
@@ -23,7 +23,7 @@ function TerciarioCarr() {
             <div className="carousel-item">
               <img src={ChicasTerciarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 60%'}} />
               <div className="carousel-caption">
-                <p className='text-shadow'>Ofrecemos una formación integral y especializada para futuros educadores. Nuestro enfoque se centra en el desarrollo de habilidades pedagógicas sólidas, la experiencia práctica en el aula y el compromiso con la excelencia educativa.</p>
+                <p className='text-shadow  bg-dark bg-gradient bg-opacity-75'>Ofrecemos una formación integral y especializada para futuros educadores. Nuestro enfoque se centra en el desarrollo de habilidades pedagógicas sólidas, la experiencia práctica en el aula y el compromiso con la excelencia educativa.</p>
               </div>
             </div>
           </div>

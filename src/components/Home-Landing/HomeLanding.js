@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tweet } from 'react-tweet'
-import ConveniosFotos from "./conveniosfotos.png"
+import ConveniosFotos from "./conveniosisa.png"
 import "./HomeLanding.css"
 import Footer from '../Footer/Footer';
 import PrincCarr from '../../assets/PrincCarr/PrincCarr';
@@ -42,13 +42,13 @@ function HomeLanding() {
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
-            <Tweet id="1787429601909854210" />
+            <Tweet id="1789966315710795912" />
           </div>
           <div className="col-lg-4">
-            <Tweet id="1786387736364007443" />
+            <Tweet id="1788924450701750618" />
           </div>
           <div className="col-lg-4">
-            <Tweet id="1786342438132461997" />
+            <Tweet id="1788879152654753978" />
           </div>
         </div>
       </div>

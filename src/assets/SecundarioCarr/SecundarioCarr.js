@@ -15,7 +15,7 @@ function SecundarioCarr() {
               <img src={SecundarioFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 35%'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow fs-1'>Nivel Secundario</h5>
-                <p className='text-shadow'>Formar alumnos libres, dinámicos, creativos, responsables, capaces de ser protagonistas y transformadores de la sociedad en la que viven.</p>
+                <p className='text-shadow  bg-dark bg-gradient bg-opacity-75'>Formar alumnos libres, dinámicos, creativos, responsables, capaces de ser protagonistas y transformadores de la sociedad en la que viven.</p>
                 <a href='/secundario'><button type="button" className="btn custom-btn">Más información</button></a>  
                 <a href='/inscripciones'><button type="button" className="btn custom-btn ms-2">Admisiones</button></a>            
               </div>
@@ -23,7 +23,7 @@ function SecundarioCarr() {
             <div className="carousel-item">
               <img src={ConferenciaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 60%'}} />
               <div className="carousel-caption">
-                <p className='text-shadow'>Inspiramos a los estudiantes a alcanzar su máximo potencial académico y personal. Nuestro enfoque educativo robusto y diversificado promueve el pensamiento crítico, la responsabilidad y la preparación para los desafíos del mundo real.</p>
+                <p className='text-shadow  bg-dark bg-gradient bg-opacity-75'>Inspiramos a los estudiantes a alcanzar su máximo potencial académico y personal. Nuestro enfoque educativo robusto y diversificado promueve el pensamiento crítico, la responsabilidad y la preparación para los desafíos del mundo real.</p>
               </div>
             </div>
           </div>

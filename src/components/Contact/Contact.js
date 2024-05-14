@@ -32,7 +32,7 @@ function Contact() {
   
     // Configurar serviceId, templateId y publicKey según el sector seleccionado
     if (selectedSector === 'Administracion') {
-      serviceId = 'service_5c04p2v';
+      serviceId = 'service_d0zsi8t';
       templateId = 'template_y3i5ayj';
       publicKey = 'cCmAKjyxVc1QkGz_O';
     } else if (selectedSector === 'Nivel Inicial') {
