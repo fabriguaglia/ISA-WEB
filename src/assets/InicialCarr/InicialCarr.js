@@ -16,8 +16,8 @@ function InicialCarr() {
                     <div className="carousel-item active">
                         <img src={InicialPic} className="d-block carousel-img" alt="Foto Nivel Inicial" style={{objectPosition: 'center center'}}/>
                         <div className="carousel-caption">
-                            <h5 className='text-shadow fs-2'>Nivel Inicial</h5>
-                            <p className='text-shadow fs-5'>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
+                            <h5 className='text-shadow fs-1'>Nivel Inicial</h5>
+                            <p className='text-shadow'>Incentivar el proceso de estructuración del pensamiento, de la imaginación creadora, la forma de expresión personal y de comunicacion verbal y gráfica.</p>
                             <a href='/jardin'><button type="button" className="btn custom-btn">Más información</button></a>               
                             <a href='/inscripciones'><button type="button" className="btn custom-btn ms-2">Admisiones</button></a>
                         </div>

@@ -35,9 +35,19 @@ const Header = () => {
         </div>
         <div className="right-section d-none d-lg-flex" id="columns-container">
           <div className="text-end ms-auto">
-            <div className="row">
-              <div className="col long-text">
-                <a href='niveles' className='linkhide'>Niveles</a>
+            <div className="row text-center">
+              <div className="col long-text p-0">
+              <div class="dropdown p-0 m-0">
+                  <a class="btn dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Niveles
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/jardin">Inicial</a></li>
+                    <li><a class="dropdown-item" href="/primario">Primario</a></li>
+                    <li><a class="dropdown-item" href="/secundario">Secundario</a></li>
+                    <li><a class="dropdown-item" href="/terciario">Terciario</a></li>
+                  </ul>
+                </div>
               </div>
               <div className="col long-text">
                 <a href='elcolegio' className='linkhide'>Sobre nosotros</a>
@@ -62,9 +72,17 @@ const Header = () => {
         </div>
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li className="nav-item dropdown">
-              <a className="nav-link active" aria-current="page" href='/niveles'>Niveles</a>
-            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Niveles
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/jardin">Inicial</a></li>
+              <li><a class="dropdown-item" href="/primario">Primario</a></li>
+              <li><a class="dropdown-item" href="/secundario">Secundario</a></li>
+              <li><a class="dropdown-item" href="/terciario">Terciario</a></li>
+            </ul>
+          </li>
             <li className="nav-item">
               <a className="nav-link" href='elcolegio'>Sobre nosotros</a>
             </li>
