@@ -3,6 +3,10 @@ import BarraColores from '../../../../assets/BarraColores'
 import TerciarioCarr from '../../../../assets/TerciarioCarr/TerciarioCarr'
 import Footer from '../../../Footer/Footer'
 
+import pdfinicial from "./Profesorado de Educación Inicial.pdf"
+import pdfprimario from "./Profesorado de Educación Primaria.pdf"
+
+
 import Familiaicon from './FullFamily.png'
 import CorteFoto from "./imagenescorte.jpg"
 import FamiliaSuperpuestaIcon from "./peoplesuperpuesta.png"
@@ -133,15 +137,35 @@ function Terciario() {
       <div>
         <p class="text-center">
             <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample">
-                <p className='mb-0 fs-2 fuente'>Profesorado de educación inicial</p>
+                <p className='mb-0 fs-2 fuente'>Profesorado de Educación Inicial</p>
             </button>
           <hr className='divisor'/>  
           </p>
           <div class="collapse" id="collapseExample11">
             <div class="card card-body">
                 <div className='text-center'>
+                    <p className='items-desc fw-bold'>Titulo: Profesora de educación inicial.</p>
                     <p className='items-desc fw-bold'>Plan de estudio 2024</p>
-                    <button type="button" className="btn custom-btn">Descargar PDF</button>
+                    <a href='inscripciones'><button type="button" className="btn custom-btn ms-2 me-2">Admisiones</button></a>
+                    <a href={pdfinicial} target="_blank" rel="noopener noreferrer"><button type="button" className="btn custom-btn">Descargar PDF</button></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div>
+        <p class="text-center">
+            <button class="mt-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample">
+                <p className='mb-0 fs-2 fuente'>Profesorado de Educación Primaria</p>
+            </button>
+          <hr className='divisor'/>  
+          </p>
+          <div class="collapse" id="collapseExample12">
+            <div class="card card-body">
+                <div className='text-center'>
+                    <p className='items-desc fw-bold'>Titulo: Profesora de educación primaria.</p>
+                    <p className='items-desc fw-bold'>Plan de estudio 2024</p>
+                    <a href='inscripciones'><button type="button" className="btn custom-btn ms-2 me-2">Admisiones</button></a>
+                    <a href={pdfprimario} target="_blank" rel="noopener noreferrer"><button type="button" className="btn custom-btn">Descargar PDF</button></a>
                 </div>
             </div>
         </div>

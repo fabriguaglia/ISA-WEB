@@ -36,7 +36,19 @@ function PrincCarr() {
               <div className="carousel-caption">
                 <h5 className='text-shadow fs-2'>Admisiones ciclo lectivo 2025</h5>
                 <p className='text-shadow  bg-dark bg-gradient bg-opacity-75'>Consultá por nuestros cupos para todos los niveles y asegurá una educación de calidad para vos y para tus hijos.</p>
-                <a href='/niveles'><button type="button" className="btn custom-btn">Ver niveles</button></a>               
+                  <button type="button" className="btn custom-btn">
+                  <div class="dropdown p-0 m-0">
+                  <a class="custom-btn dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Niveles
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/jardin">Inicial</a></li>
+                    <li><a class="dropdown-item" href="/primario">Primario</a></li>
+                    <li><a class="dropdown-item" href="/secundario">Secundario</a></li>
+                    <li><a class="dropdown-item" href="/terciario">Terciario</a></li>
+                  </ul>
+                </div>
+                  </button>           
                 <button type="button" className="btn custom-btn ms-2" onClick={handleAdmisionesClick}>Admisiones</button>
               </div>
             </div>

@@ -23,9 +23,8 @@ function AboutUs() {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src={IsaEntradaFoto} className="d-block carousel-img" alt="Foto Nivel Inicial" style={{objectPosition: 'center center'}}/>
-                        <div className="carousel-caption">
-                            <h5 className='text-shadow fs-1 my-5'>Sobre Nosotros</h5>
-                            <button type="button" className="btn custom-btn ms-2 my-2">Admisiones</button>
+                        <div className="carousel-caption mb-5">
+                            <h5 className='text-shadow fs-1 my-5 mb-5'>Sobre Nosotros</h5>
                         </div>
                     </div>
                     <div className="carousel-item">
