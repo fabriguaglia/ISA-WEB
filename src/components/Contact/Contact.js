@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import './Contact.css';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
+import Footer from '../Footer/Footer';
 
 function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -70,7 +71,8 @@ function Contact() {
   
   
   return (
-    <div className="container">
+    <>
+    <div className="container mb-4">
       <div className="row">
         <div className="col-md-6">
           <p className="fs-3 items-desc titleinicial items-desc text-center" style={{ color: 'navy' }}>Contactenos</p>
@@ -102,7 +104,7 @@ function Contact() {
                 <label htmlFor="mensaje" style={{ color: 'navy' }}>Mensaje:</label>
                 <textarea id="mensaje" name="message" className="form-control" placeholder="Escriba su mensaje aquí" rows="5" required></textarea>
               </div>
-              <button type="submit" className="btn btn-primary">Enviar</button>
+              <button type="submit" className="btn custom-btn">Enviar</button>
             </form>
           )}
         </div>
@@ -128,6 +130,8 @@ function Contact() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 
