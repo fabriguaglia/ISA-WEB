@@ -35,7 +35,7 @@ function PrincCarr() {
               <img src={EntradaFoto} className="d-block carousel-img" alt="..." style={{objectPosition: 'center 40%'}} />
               <div className="carousel-caption">
                 <h5 className='text-shadow fs-2'>Admisiones ciclo lectivo 2025</h5>
-                <p className='text-shadow  bg-dark bg-gradient bg-opacity-75'>Consultá por nuestros cupos para todos los niveles y asegurá una educación de calidad para vos y para tus hijos.</p>
+                <p className='text-shadow bg-dark bg-gradient bg-opacity-75'>Consultá por nuestros cupos para todos los niveles y asegurá una educación de calidad para vos y para tus hijos.</p>
                   <button type="button" className="btn custom-btn">
                   <div class="dropdown p-0 m-0">
                   <a class="custom-btn dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

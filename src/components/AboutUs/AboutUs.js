@@ -30,7 +30,7 @@ function AboutUs() {
                     <div className="carousel-item">
                         <img src={IsaFotoVieja} className="d-block carousel-img" alt="Foto Jardín" style={{objectPosition: 'center 20%'}}/>
                         <div className="carousel-caption">
-                            <p className='text-shadow'>Fomentamos la curiosidad, creatividad y habilidades sociales desde una edad temprana.</p>
+                            <p className='text-shadow bg-dark bg-gradient bg-opacity-75'>Fomentamos la curiosidad, creatividad y habilidades sociales desde una edad temprana.</p>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,9 @@ function AboutUs() {
             </div>
         </div>
         <BarraColores />
-        <img src={IsaPanoramFoto} className="img-fluid" alt="Foto Panorámica"/>
+            <div className='row vertical-center-row'>
+                <img src={IsaPanoramFoto} className="img-fluid" alt="Foto Panorámica"/>  
+            </div>
         <BarraColores/>
         <div className="container text-center">
             <div className="row">
@@ -133,7 +135,9 @@ function AboutUs() {
                     </div>
                 </div>
             </div>
-            <img src={ImagenCorteEscuela} className="img-fluid" alt="Foto Panorámica"/>
+                <div className='row vertical-center-row'>
+                    <img src={ImagenCorteEscuela} className="img-fluid" alt="Foto Panorámica"/>
+                </div>
             <div className="container text-center">
             <p className="fs-3 items-desc titleinicial items-desc text-center">Perfil del alumno</p>
             <hr className='divisor'/>
@@ -153,7 +157,9 @@ function AboutUs() {
                     </div>
             </div>
             </div>
-            <img src={ImagenCorteEscuela2} className="img-fluid" alt="Foto Panorámica"/>
+                <div className='row vertical-center-row'>
+                    <img src={ImagenCorteEscuela2} className="img-fluid" alt="Foto Panorámica"/>
+                </div>
             <div className="container text-center">
                 <p className="fs-3 items-desc titleinicial items-desc text-center">¿Qué pretendemos?</p>
                 <hr className='divisor'/>
