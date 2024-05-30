@@ -32,13 +32,13 @@ function Inscripciones() {
 
     // Configurar serviceId, templateId y publicKey según el nivel de educación seleccionado
     if (formValues.nivelEducacion === 'Nivel Inicial') {
-      serviceId = 'service_qyhe1px';
-      templateId = 'template_216xyx3';
-      publicKey = 'WCqy7SlmWtNThK1AY';
+      serviceId = 'service_c3hj18p';
+      templateId = 'template_oppp37m';
+      publicKey = '0KNLAuH-ohC7XC6QO';
     } else if (formValues.nivelEducacion === 'Nivel primario') {
-      serviceId = 'service_agf1n1s';
-      templateId = 'template_y2wpfij';
-      publicKey = '9bOLSf2YQActFeOGW'; // Reemplaza con la clave pública correspondiente
+      serviceId = 'service_mbx8omp';
+      templateId = '0KNLAuH-ohC7XC6QO';
+      publicKey = '0KNLAuH-ohC7XC6QO'; // Reemplaza con la clave pública correspondiente
     } else if (formValues.nivelEducacion === 'Nivel secundario') {
       serviceId = 'service_fp74y9r';
       templateId = 'template_obq7uuv';
@@ -73,33 +73,45 @@ function Inscripciones() {
         <h1 className='text-center'>Inscripciones</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label htmlFor="nombreMadre" className="form-label">Nombre Madre/Tutor  </label>
+            <label htmlFor="nombreMadre" className="form-label">Nombre Madre/Padre/Tutor  </label>
             <input type="text" className="form-control" id="nombreMadre" name="user_nametutor"  required />
           </div>
+
           <div className="mb-3">
-            <label htmlFor="apellidoMadre" className="form-label">Apellido Madre/Tutor  </label>
+            <label htmlFor="apellidoMadre" className="form-label">Apellido Madre/Padre/Tutor  </label>
             <input type="text" className="form-control" id="apellidoMadre" name="user_apellido"  required />
           </div>
           <div className="mb-3">
-            <label htmlFor="documentoMadre" className="form-label">N° Documento Madre/Tutor  </label>
-            <input type="text" className="form-control" id="documentoMadre" name="user_documento" required />
+            <label htmlFor="nombreIngresante" className="form-label">CUIL del Padre/Madre/Tutor</label>
+            <input type="text" className="form-control" id="nombreIngresante" name="user_nymingresante" required />
           </div>
           <div className="mb-3">
             <label htmlFor="correoContacto" className="form-label">Correo electrónico de contacto </label>
             <input type="email" className="form-control" id="correoContacto" name="user_mail" required />
           </div>
           <div className="mb-3">
-            <label htmlFor="anoIngreso" className="form-label">Año de ingreso </label>
-            <input type="number" className="form-control" id="anoIngreso" name="user_ingreso" required />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="cantidadIngresantes" className="form-label">Cantidad de ingresantes </label>
-            <input type="number" className="form-control" id="cantidadIngresantes" name="user_icantidad" required />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="nombreIngresante" className="form-label">Nombre y apellido del ingresante</label>
+            <label htmlFor="nombreIngresante" className="form-label">Telefono</label>
             <input type="text" className="form-control" id="nombreIngresante" name="user_nymingresante" required />
           </div>
+         
+          <div className="mb-3">
+            <label htmlFor="nombreIngresante" className="form-label">Direccion del Responsable</label>
+            <input type="text" className="form-control" id="nombreIngresante" name="user_nymingresante" required />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="nombreIngresante" className="form-label">Nombre y apellido del alumno</label>
+            <input type="text" className="form-control" id="nombreIngresante" name="user_nymingresante" required />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="nombreIngresante" className="form-label">DNI del alumno</label>
+            <input type="text" className="form-control" id="nombreIngresante" name="user_nymingresante" required />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="nombreIngresante" className="form-label">Colegio del que proviene</label>
+            <input type="text" className="form-control" id="nombreIngresante" name="user_nymingresante" required />
+          </div>
+        
+        
           <div className="mb-3">
             <label htmlFor="nivelEducacion" className="form-label">Nivel de Educación </label>
             <select className="form-select" id="nivelEducacion" name="nivelEducacion" value={formValues.nivelEducacion} onChange={handleChange} required>
@@ -108,7 +120,25 @@ function Inscripciones() {
               <option value="Nivel secundario">Nivel secundario</option>
               <option value="Nivel terciario">Nivel terciario</option>
             </select>
+<br></br>
+<div className="mb-3">
+            <label htmlFor="nombreIngresante" className="form-label">Curso al que quiere ingresar</label>
+            <input type="text" className="form-control" id="nombreIngresante" name="user_nymingresante" required />
           </div>
+            <div className="mb-3">
+            <label htmlFor="nivelEducacion" className="form-label">Año de ingreso </label>
+            <select className="form-select" id="nivelEducacion" name="nivelEducacion" value={formValues.nivelEducacion} onChange={handleChange} required>
+              <option value="Nivel Inicial">2025</option>
+              <option value="Nivel primario">2026</option>
+              <option value="Nivel secundario">2027</option>
+              <option value="Nivel terciario">2028</option>
+              <option value="Nivel terciario">2029</option>
+            </select>
+      
+          </div>
+          </div>
+      
+       
           <button type="submit" className="btn custom-btn mb-3">Enviar</button>
         </form>
       </div>
