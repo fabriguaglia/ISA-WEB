@@ -20,6 +20,8 @@ function Inscripciones() {
     añoIngreso: '2025',
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({
@@ -33,7 +35,6 @@ function Inscripciones() {
 
     let serviceId, templateId, publicKey;
 
-    // Configurar serviceId, templateId y publicKey según el nivel de educación seleccionado
     switch (formValues.nivelEducacion) {
       case 'Nivel Inicial':
         serviceId = 'service_qyhe1px';
@@ -43,17 +44,17 @@ function Inscripciones() {
       case 'Nivel primario':
         serviceId = 'service_agf1n1s';
         templateId = 'template_y2wpfij';
-        publicKey = '9bOLSf2YQActFeOGW'; // Ajusta con la clave pública correspondiente
+        publicKey = '9bOLSf2YQActFeOGW';
         break;
       case 'Nivel secundario':
         serviceId = 'service_fp74y9r';
         templateId = 'template_obq7uuv';
-        publicKey = 'WCqy7SlmWtNThK1AY'; // Ajusta con la clave pública correspondiente
+        publicKey = 'WCqy7SlmWtNThK1AY';
         break;
       case 'Nivel terciario':
         serviceId = 'service_e7hwkil';
         templateId = 'template_owhk5vd';
-        publicKey = '9bOLSf2YQActFeOGW'; // Ajusta con la clave pública correspondiente
+        publicKey = '9bOLSf2YQActFeOGW';
         break;
       default:
         return;
@@ -67,11 +68,10 @@ function Inscripciones() {
       .sendForm(serviceId, templateId, e.target, publicKey)
       .then((response) => {
         console.log('Correo enviado con éxito!', response);
-        // Aquí podrías mostrar un mensaje de éxito o redirigir a una página de confirmación
+        setIsSubmitted(true); // Cambiar el estado a true después de enviar correctamente
       })
       .catch((error) => {
         console.error('Error al enviar el correo:', error);
-        // Aquí podrías manejar el error de alguna manera, como mostrar un mensaje al usuario
       });
   };
 
@@ -277,6 +277,12 @@ function Inscripciones() {
             Enviar
           </button>
         </form>
+
+        {isSubmitted && (
+          <div className="alert alert-success mt-3" role="alert">
+            ¡Su solicitud ha sido enviada con éxito!
+          </div>
+        )}
       </div>
       <Footer />
     </>
