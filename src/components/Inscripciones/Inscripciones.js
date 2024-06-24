@@ -36,19 +36,19 @@ function Inscripciones() {
     // Configurar serviceId, templateId y publicKey según el nivel de educación seleccionado
     switch (formValues.nivelEducacion) {
       case 'Nivel Inicial':
-        serviceId = 'service_c3hj18p';
-        templateId = 'template_oppp37m';
-        publicKey = '0KNLAuH-ohC7XC6QO';
+        serviceId = 'service_qyhe1px';
+        templateId = 'template_216xyx3';
+        publicKey = 'WCqy7SlmWtNThK1AY';
         break;
       case 'Nivel primario':
-        serviceId = 'service_mbx8omp';
-        templateId = 'template_obq7uuv';
-        publicKey = 'WCqy7SlmWtNThK1AY'; // Ajusta con la clave pública correspondiente
+        serviceId = 'service_agf1n1s';
+        templateId = 'template_y2wpfij';
+        publicKey = '9bOLSf2YQActFeOGW'; // Ajusta con la clave pública correspondiente
         break;
       case 'Nivel secundario':
         serviceId = 'service_fp74y9r';
-        templateId = 'template_owhk5vd';
-        publicKey = '9bOLSf2YQActFeOGW'; // Ajusta con la clave pública correspondiente
+        templateId = 'template_obq7uuv';
+        publicKey = 'WCqy7SlmWtNThK1AY'; // Ajusta con la clave pública correspondiente
         break;
       case 'Nivel terciario':
         serviceId = 'service_e7hwkil';
