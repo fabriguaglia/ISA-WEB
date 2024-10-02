@@ -10,13 +10,6 @@ import PropuestasDidacticas from "./propuestasdidacticas.jpg"
 import InglesPic from "./Ingles.jpg"
 
 function PrincCarr() {
-    const handleAdmisionesClick = () => {
-      Swal.fire({
-        icon: 'info',
-        title: 'Disculpe las molestias',
-        text: 'Página en construcción'
-      });
-    };
   return (
     <div className="container-fluid p-0">
         <div id="carouselExampleCaptionsTop1" className="carousel slide" style={{width: "100%"}}>
@@ -49,7 +42,7 @@ function PrincCarr() {
                   </ul>
                 </div>
                   </button>           
-                <button type="button" className="btn custom-btn ms-2" onClick={handleAdmisionesClick}>Admisiones</button>
+                <a href='/inscripciones'><button type="button" className="btn custom-btn ms-2">Admisiones</button></a>
               </div>
             </div>
             <div className="carousel-item">
